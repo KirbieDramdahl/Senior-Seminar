@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{MorphologyWikiAnonymous}
+Morphological image processing.
+
+\bibitem{MorphologyBook:2000}
+N.~Efford.
+\newblock {\em Digital Image Processing: A Practical Introduction Using
+  JavaTM}.
+\newblock Pearson Education, 2000.
+
+\bibitem{MorphologyWiki}
+A.~W. R.~Fisher, S.~Perkins and E.~Wolfart.
+\newblock Morphology.
+
+\bibitem{MorphologyPaper:1987}
+S.~R.~S. R.~M.~Haralick and X.~Zhuang.
+\newblock Image analysis using mathematical morphology.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 9:532--550, July 1987.
+
+\end{thebibliography}

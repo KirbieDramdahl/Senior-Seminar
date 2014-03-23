@@ -1,0 +1,61 @@
+\begin{thebibliography}{10}
+
+\bibitem{MorphologyWikiAnonymous}
+Morphological image processing.
+\newblock Available at
+  \textit{https://www.cs.auckland.ac.nz/courses/compsci773s1c
+  /lectures/ImageProcessing-html/topic4.htm}.
+
+\bibitem{Canny:1986}
+J.~Canny.
+\newblock A computational approach to edge detection.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, PAMI-8(6):679--698, Nov 1986.
+
+\bibitem{Altarpiece:2013}
+B.~Cornelis, T.~Ru\v{z}i\'{c}, E.~Gezels, A.~Dooms, A.~Pi\v{z}urica,
+  L.~Plati\v{s}a, J.~Cornelis, M.~Martens, M.~D. Mey, and I.~Daubechies.
+\newblock Crack detection and inpainting for virtual restoration of paintings:
+  The case of the ghent altarpiece.
+\newblock {\em Signal Processing}, 93(3):605 -- 619, 2013.
+\newblock Image Processing for Digital Art Work.
+
+\bibitem{Statistics:2013}
+S.~Desai, K.~Horadi, P.~Navaneet, B.~Niriksha, and V.~Siddeshvar.
+\newblock Detection and removal of cracks from digitized paintings and images
+  by user intervention.
+\newblock In {\em Advanced Computing, Networking and Security (ADCONS), 2013
+  2nd International Conference on}, pages 51--55, Dec 2013.
+
+\bibitem{MorphologyBook:2000}
+N.~Efford.
+\newblock {\em Digital image processing: a practical introduction using Java}.
+\newblock Addison-Wesley, 2000.
+
+\bibitem{CannySummarized}
+B.~Green.
+\newblock Canny edge detection tutorial.
+
+\bibitem{MorphologyPaper:1987}
+R.~Haralick, S.~R. Sternberg, and X.~Zhuang.
+\newblock Image analysis using mathematical morphology.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, PAMI-9(4):532--550, July 1987.
+
+\bibitem{Theran:2013}
+N.~Karianakis and P.~Maragos.
+\newblock An integrated system for digital restoration of prehistoric theran
+  wall paintings.
+\newblock In {\em Digital Signal Processing (DSP), 2013 18th International
+  Conference on}, pages 1--6, July 2013.
+
+\bibitem{MorphologyWiki}
+A.~W. R.~Fisher, S.~Perkins and E.~Wolfart.
+\newblock Morphology.
+
+\bibitem{TopHat:2010}
+G.~S. Spagnolo and F.~Somma.
+\newblock Virtual restoration of cracks in digitized image of paintings.
+\newblock {\em Journal of Physics: Conference Series}, 249(1):012059, 2010.
+
+\end{thebibliography}
