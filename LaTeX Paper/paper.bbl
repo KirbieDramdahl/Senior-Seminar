@@ -35,6 +35,8 @@ N.~Efford.
 \bibitem{CannySummarized}
 B.~Green.
 \newblock Canny edge detection tutorial.
+\newblock Available at \textit{http://dasl.mem.drexel.edu/alumni/bGreen
+  /www.pages.drexel.edu/\textunderscore weg22/can\textunderscore tut.html}.
 
 \bibitem{MorphologyPaper:1987}
 R.~Haralick, S.~R. Sternberg, and X.~Zhuang.
@@ -52,6 +54,8 @@ N.~Karianakis and P.~Maragos.
 \bibitem{MorphologyWiki}
 A.~W. R.~Fisher, S.~Perkins and E.~Wolfart.
 \newblock Morphology.
+\newblock Available at
+  \textit{http://homepages.inf.ed.ac.uk/rbf/HIPR2/morops.htm}.
 
 \bibitem{TopHat:2010}
 G.~S. Spagnolo and F.~Somma.
