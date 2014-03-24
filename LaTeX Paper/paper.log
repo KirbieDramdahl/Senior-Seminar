@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.21)  23 MAR 2014 19:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.21)  23 MAR 2014 23:56
 entering extended mode
 **paper.tex
 ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Paper\paper.tex"
@@ -341,10 +341,6 @@ pdf> <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/dilation.pdf> <C
 :/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/greyscale_dilation.pdf>
  <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/opening.pdf>]
 [4 <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/closing.pdf>]
-Overfull \hbox (1.84488pt too wide) in paragraph at lines 236--255
- [][] 
- []
-
 [5] ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Paper\paper.bbl"
 Overfull \hbox (0.80937pt too wide) in paragraph at lines 55--59
 \T1/aer/m/it/9 http://homepages.inf.ed.ac.uk/rbf/HIPR2/morops.htm\T1/aer/m/n/9 
@@ -355,11 +351,11 @@ Overfull \hbox (0.80937pt too wide) in paragraph at lines 55--59
 Here is how much of TeX's memory you used:
  2705 strings out of 493921
  33549 string characters out of 3148871
- 116449 words of memory out of 3000000
+ 110449 words of memory out of 3000000
  5934 multiletter control sequences out of 15000+200000
  53178 words of font info for 70 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 41i,11n,28p,1554b,284s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,28p,1552b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
 {
 C:/Program Files/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX/fonts/type1
@@ -371,7 +367,7 @@ KTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/u
 rw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pf
 b><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/M
 iKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (6 pages, 814315 bytes).
+Output written on paper.pdf (6 pages, 814309 bytes).
 PDF statistics:
  172 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
