@@ -107,7 +107,7 @@ g = f \oplus s
 \end{equation*}
 where the symbol $\oplus$ indicates dilation~\cite{MorphologyWikiAnonymous, MorphologyBook:2000}.
 
-In binary dilation, this is accomplished by placing the origin of the structuring element over every pixel of the background regions in turn. If every point within the structuring element is in line with a background pixel, the background pixel lined up with the origin of the structuring element is left unchanged. If at least one point within the structuring element is in line with a foreground pixel, then the pixel lined up with the origin of the structuring element is converted to a foreground pixel~\cite{MorphologyWiki}. An example of binary dilation on a 20x30 image using a 3x3 square structuring element with the origin located at the center is presented in Figure~\ref{binary dilation figure}. The dilation of foreground regions is equivalent to the erosion (discussed in Subsection~\ref{erosion}) of background regions~\cite{MorphologyWiki}.
+In binary dilation, this is accomplished by placing the origin of the structuring element over every pixel of the background regions in turn. If every point within the structuring element is in line with a background pixel, the background pixel lined up with the origin of the structuring element is left unchanged. If at least one point within the structuring element is in line with a foreground pixel, then the pixel lined up with the origin of the structuring element is converted to a foreground pixel~\cite{MorphologyWiki}. An example of binary dilation on a 20x30 image using a 3x3 square structuring element with the origin located at the center is presented in Figure~\ref{binary dilation figure}. It is also perhaps worth noting that the dilation of foreground regions is equivalent to the erosion (discussed in Subsection~\ref{erosion}) of background regions, and the erosion of foreground regions is equivalent to the dilation of background regions~\cite{MorphologyWiki}.
 \begin{figure}
 \centering
 \includegraphics[width=3in,trim={0 6.75in 0 0},clip]{dilation}
@@ -128,7 +128,7 @@ The opening of an image is an erosion followed by a dilation, and is denoted by 
 \begin{equation*}
 g = f \circ s = (f \ominus s) \oplus s
 \end{equation*}
-where the symbol $\circ$ indicates opening~\cite{MorphologyWikiAnonymous, MorphologyBook:2000}. Similar to erosion, opening strips away foreground pixels at the boundaries of foreground regions, but is less destructive of the initial foreground regions than erosion. Opening is therefore typically used to preserve foreground regions with a similar size and shape to the structuring element, while removing or reducing other foreground regions~\cite{MorphologyWiki}. An example of binary opening on a 20x30 image using a 3x3 square structuring element with the origin located at the center is presented in Figure~\ref{binary opening figure}. The opening of foreground regions is equivalent to the closing of background regions~\cite{MorphologyWiki}.
+where the symbol $\circ$ indicates opening~\cite{MorphologyWikiAnonymous, MorphologyBook:2000}. Similar to erosion, opening strips away foreground pixels at the boundaries of foreground regions, but is less destructive of the initial foreground regions than erosion. Opening is therefore typically used to preserve foreground regions with a similar size and shape to the structuring element, while removing or reducing other foreground regions~\cite{MorphologyWiki}. An example of binary opening on a 20x30 image using a 3x3 square structuring element with the origin located at the center is presented in Figure~\ref{binary opening figure}.
 \begin{figure}
 \centering
 \includegraphics[width=3in,trim={0 4.75in 0 0},clip]{opening}
@@ -143,7 +143,7 @@ Closing of an image is a dilation followed by an erosion, and is denoted by the 
 \begin{equation*}
 g = f \bullet s = (f \oplus s) \ominus s
 \end{equation*}
-where the symbol $\bullet$ indicates closing~\cite{MorphologyWikiAnonymous, MorphologyBook:2000}. Similar to dilation, closing adds foreground pixels at the boundaries of foreground regions, but is less destructive of the initial background regions than dilation. Closing is therefore typically used to preserve background regions with a similar size and shape to the structuring element, while removing or reducing other background regions~\cite{MorphologyWiki}. An example of binary closing on a 20x30 image using a 3x3 square structuring element with the origin located at the center is presented in Figure~\ref{binary closing figure}. The closing of foreground regions is equivalent to the opening of background regions~\cite{MorphologyWiki}.
+where the symbol $\bullet$ indicates closing~\cite{MorphologyWikiAnonymous, MorphologyBook:2000}. Similar to dilation, closing adds foreground pixels at the boundaries of foreground regions, but is less destructive of the initial background regions than dilation. Closing is therefore typically used to preserve background regions with a similar size and shape to the structuring element, while removing or reducing other background regions~\cite{MorphologyWiki}. An example of binary closing on a 20x30 image using a 3x3 square structuring element with the origin located at the center is presented in Figure~\ref{binary closing figure}. Similar to the relationship between erosion and dilation, the closing of foreground regions is equivalent to the opening of background regions, and the opening of foreground regions is equivalent to the closing of background regions.~\cite{MorphologyWiki}.
 \begin{figure}
 \centering
 \includegraphics[width=3in,trim={0 4.75in 0 0},clip]{closing}
@@ -151,11 +151,10 @@ where the symbol $\bullet$ indicates closing~\cite{MorphologyWikiAnonymous, Morp
 \label{binary closing figure}
 \end{figure}
 
-The greyscale closing of an image also consists of a dilation followed by an erosion. Here, however, both the dilation and erosion are greyscale rather than binary~\cite{MorphologyPaper:1987}.
-\pagebreak
+The greyscale closing of an image also consists of a dilation followed by an erosion. And again, as in greyscale opening, both the dilation and erosion operations are greyscale instead binary~\cite{MorphologyPaper:1987}.
 
 \section{Methods of Crack Detection}\label{crack detection}
-The next step in the crack detection and removal process (following optional edge detection), is crack detection. This section will discuss the application of various morphological filters to this problem.
+The next step in the crack detection and removal process (following optional edge detection) is crack detection. This section will discuss the application of various morphological filters to this problem.
 
 \subsection{Top-Hat Transform}
 The morphological filter most frequently used for detecting cracks within digitalized works of art is the top-hat transform. There are two variations on this filter, the black top-hat transform and white top-hat transform, which will be discussed in Subsubsections~\ref{black top-hat} and \ref{white top-hat} respectively.
@@ -189,7 +188,7 @@ Karianakis and Maragos then return again to the original input image. From this 
 At this point, Karianakis and Maragos now have two binary masks: the crack mask obtained by thresholding, and the edge map obtained by the Canny edge detection algorithm. These two masks are then joined, and the resulting binary mask is then iteratively eroded until immediately before a certain percentage of edge information is lost. This process results in a smoother crack mask and, depending on how much edge information is lost, reduces the likelihood of false positives~\cite{Theran:2013}.
 
 \section{Inpainting}\label{inpainting}
-The final stage in the digital art restoration process is crack removal, frequently referred to as inpainting. As with crack detection, there are many potential solutions to the crack removal process. This section will examine the method described by Spagnolo and Somma in their study~\cite{TopHat:2010}.
+The final stage in the digital art restoration process is crack removal, frequently referred to as inpainting. As with edge detection, inpainting does not rely upon mathematical morphology. Regardless, it is discussed here in order to provide a more complete understanding of the digital art restoration process. As with crack detection, there are many potential solutions to the crack removal process. This section will examine the method described by Spagnolo and Somma in their study~\cite{TopHat:2010}.
 
 In this method, the original input image is broken down into regions, which are further divided into neighborhoods (Spagnolo and Somma define 5x5 pixel neighborhoods and 100x100 pixel regions~\cite{TopHat:2010}). From the previous crack detection step, the defective pixels are already known. For this information, it is now possible to proceed with the inpainting process~\cite{TopHat:2010}.
 
@@ -257,12 +256,14 @@ The statistics reported are summarized in Table~\ref{results table}. While the t
 \end{table*}
 
 \section{Conclusions}\label{conclusion}
-This paper has examined digital art restoration by breaking this process down into three primary components: edge detection, crack detection, and crack removal (inpainting), with a specific focus on the crack detection phase as completed using morphological operations.
+This paper has examined digital art restoration by breaking this process down into three primary components: edge detection, crack detection, and crack removal (inpainting), with a specific focus on the crack detection phase as completed using morphological operations. A comparison of the two methodologies discussed demonstrates that the top-hat transform in both its classical and multiscale implementations tends to perform with greater consistency and accuracy under various experimental circumstances than the alternative presented by Karianakis and Maragos.
 
-While it has been demonstrated that there are many and varied effective methods of crack detection and removal, cracks are only one form of defect that may be encountered in the digital art restoration process. Areas for further study include the detection and removal of dust, scratches, fading, and missing sections from digitalized works of art~\cite{TopHat:2010}.
+The focus of this paper was quite specifically on the effectiveness of applying morphological filters to the crack detection stage of the digital art restoration process. However, other methods of crack detection exist, and it could prove interesting to examine the efficiency of these alternatives as opposed to mathematical morphology. Yet another option would be to examine the effect of various methods of either edge detection or inpainting (as opposed to crack detection) on the final results of the digital art restoration process.
+
+Finally, while it has been demonstrated that there are many and varied effective methods of crack detection and removal, cracks are only one form of defect that may be encountered in the digital art restoration process. Areas for further study include the detection and removal of dust, scratches, fading, and missing sections from digitalized works of art~\cite{TopHat:2010}.
 
 \section{Acknowledgments}
-Thanks to Peter Dolan for his input, help, and advice.
+Thanks to Peter Dolan for his input, help, and advice, and to Elena Machkasova for her recommendations.
 
 % The following two commands are all you need in the
 % initial runs of your .tex file to
