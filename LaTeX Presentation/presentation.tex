@@ -77,35 +77,142 @@
 \subsection*{Outline}
 
 \begin{frame}
+\frametitle{Why?}
+Art restoration preserves objects of artistic, cultural, or historical value.
+\linebreak
+\linebreak
+Digital art restoration provides:
+\begin{itemize}
+\item a comparatively inexpensive alternative.
+\item a nondestructive tool.
+\item an approximation of the initial appearance.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
   \frametitle{Outline}
   \tableofcontents[hideallsubsections]
 \end{frame}
 
 \section[Edge Detection]{Edge Detection}
 
+\begin{frame}
+\frametitle{Criteria}
+\begin{enumerate}
+\item Accuracy - low error rate
+\linebreak
+\item Localization - minimal distance between detected and actual edge
+\linebreak
+\item Uniqueness - only one response to a single edge
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Canny Algorithm}
+\end{frame}
+
 \section[Morphological Operations]{Morphological Operations}
+
+\begin{frame}
+\frametitle{Morphological Operations}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+Binary and Greyscale Images
+\linebreak
+\linebreak
+Two Inputs:
+\begin{itemize}
+\item Original Image
+\item Structuring Element
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=1\textwidth]{structuring_element_placement}
+\end{column}
+\end{columns}
+\end{frame}
 
 \subsection[Erosion]{Erosion}
 
+\begin{frame}
+\frametitle{Erosion}
+\includegraphics[width=1\textwidth]{erosion}
+\end{frame}
+
 \subsection[Dilation]{Dilation}
+
+\begin{frame}
+\frametitle{Dilation}
+\includegraphics[width=1\textwidth]{dilation}
+\end{frame}
 
 \subsection[Opening]{Opening}
 
+\begin{frame}
+\frametitle{Opening}
+\includegraphics[width=1\textwidth]{opening}
+\end{frame}
+
 \subsection[Closing]{Closing}
+
+\begin{frame}
+\frametitle{Closing}
+\includegraphics[width=1\textwidth]{closing}
+\end{frame}
 
 \section[Methods of Crack Detection]{Methods of Crack Detection}
 
 \subsection[Top-Hat Transform]{Top-Hat Transform}
 
-\subsubsection[White Top-Hat]{White Top-Hat}
+\begin{frame}
+\frametitle{Top-Hat Algorithm}
+Three Variations:
+\begin{itemize}
+\item Black Top-Hat
+\linebreak
+\item White Top-Hat
+\linebreak
+\item Multiscale Top-Hat
+\end{itemize}
+\end{frame}
 
 \subsubsection[Black Top-Hat]{Black Top-Hat}
+
+\begin{frame}
+\frametitle{Black Top-Hat Transform}
+Darker Details on a Lighter Background
+\linebreak
+\linebreak
+$BTH = (f \bullet s) - f$
+\end{frame}
+
+\subsubsection[White Top-Hat]{White Top-Hat}
+
+\begin{frame}
+\frametitle{White Top-Hat Transform}
+Lighter Details on a Darker Background
+\linebreak
+\linebreak
+$WTH = f - (f \circ s)$
+\end{frame}
 
 \subsubsection[Multiscale Top-Hat]{Multiscale Top-Hat}
 
 \subsection[Alternative Method]{Alternative Method}
 
 \section[Inpainting]{Inpainting}
+
+\begin{frame}
+\frametitle{Inpainting Process}
+The image is broken down into regions, which are further broken down into neighborhoods. For each defective pixel $i$:
+\begin{enumerate}
+\item Find the context of $i$.
+\item Examine all other neighborhoods within the region of $i$.
+\item Find neighborhood most similar to context of $i$ by sum of squared differences.
+\item If the sum of squared errors is below a set threshold, replace all defective pixels in the neighborhood of $i$ with corresponding pixels from most similar neighborhood.
+\item Otherwise, replace pixel $i$ with the median value of all non-defective pixels within its neighborhood.
+\end{enumerate}
+\end{frame}
 
 \section[Results]{Results}
 
@@ -117,13 +224,11 @@
 
 \begin{frame}
 	\frametitle{Thanks!}
-	
-	Thank you for your time and attention!
 		
 	\linespace
 	\linespace
 	
-	Contact: \texttt{dramd002@morris.umn.edu}
+	%Contact: \texttt{dramd002@morris.umn.edu}
 	
 	\linespace
 	\linespace

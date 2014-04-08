@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.3)  4 APR 2014 01:59
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.3)  8 APR 2014 01:58
 entering extended mode
 **presentation.tex
 
@@ -909,9 +909,7 @@ LaTeX Info: Redefining \includegraphics on input line 63.
 ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
 nav") [1
 
-{C:/Users/MKDramdahl/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
-toc") [2
+{C:/Users/MKDramdahl/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ]
 ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
@@ -919,69 +917,163 @@ toc") [3
 
 ]
 ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
+toc") [4
+
+] [5
+
+] [6
+
+]
+("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
 toc")
-Overfull \vbox (11.52086pt too high) detected at line 86
+Overfull \vbox (11.52086pt too high) detected at line 114
  []
 
-[4
+[7
 
 ]
-("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
-toc") [5
+LaTeX Font Info:    Try loading font information for U+msa on input line 133.
+ ("C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 133.
 
-]
-("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
-toc") [6
+("C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 133.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 133.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 133.
 
-]
-("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
-toc") [7
+<structuring_element_placement.pdf, id=308, 614.295pt x 794.97pt>
+File: structuring_element_placement.pdf Graphic file (type pdf)
 
-]
-("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
-toc") [8
+<use structuring_element_placement.pdf>
+Package pdftex.def Info: structuring_element_placement.pdf used on input line 1
+33.
+(pdftex.def)             Requested size: 171.14764pt x 221.48622pt.
 
-]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 134.
- ("C:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd"
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [9
+Overfull \vbox (4.70767pt too high) detected at line 133
+ []
 
-]
+[8
 
-LaTeX Warning: Empty `thebibliography' environment on input line 143.
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/structuring_e
+lement_placement.pdf>] <erosion.pdf, id=344, 614.295pt x 794.97pt>
+File: erosion.pdf Graphic file (type pdf)
+
+<use erosion.pdf>
+Package pdftex.def Info: erosion.pdf used on input line 140.
+(pdftex.def)             Requested size: 342.2953pt x 442.97246pt.
+
+Overfull \vbox (226.19391pt too high) detected at line 140
+ []
+
+[9
+
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/erosion.pdf>]
+ <dilation.pdf, id=383, 614.295pt x 794.97pt>
+File: dilation.pdf Graphic file (type pdf)
+ <use dilation.pdf>
+Package pdftex.def Info: dilation.pdf used on input line 147.
+(pdftex.def)             Requested size: 342.2953pt x 442.97246pt.
+
+Overfull \vbox (226.19391pt too high) detected at line 147
+ []
 
 [10
+
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/dilation.pdf>
+] <opening.pdf, id=422, 794.97pt x 614.295pt>
+File: opening.pdf Graphic file (type pdf)
+ <use opening.pdf>
+Package pdftex.def Info: opening.pdf used on input line 154.
+(pdftex.def)             Requested size: 342.2953pt x 264.50725pt.
+
+Overfull \vbox (47.7287pt too high) detected at line 154
+ []
+
+[11
+
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/opening.pdf>]
+ <closing.pdf, id=463, 794.97pt x 614.295pt>
+File: closing.pdf Graphic file (type pdf)
+ <use closing.pdf>
+Package pdftex.def Info: closing.pdf used on input line 161.
+(pdftex.def)             Requested size: 342.2953pt x 264.50725pt.
+
+Overfull \vbox (47.7287pt too high) detected at line 161
+ []
+
+[12
+
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/closing.pdf>]
+
+("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
+toc") [13
+
+] [14
+
+] [15
+
+] [16
+
+]
+("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
+toc") [17
+
+] [18
+
+]
+("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
+toc") [19
+
+]
+("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
+toc") [20
+
+] [21
+
+]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 248.
+
+[22
 
 ]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
 
 ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
 aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 5C981E8316D60F7B098254C2ED4698CA;828.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
+(rerunfilecheck)             Checksum: 8EB62C5E365A7291F0A0A816DCBEE724;835.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 250.
  ) 
 Here is how much of TeX's memory you used:
- 16185 strings out of 493906
- 300770 string characters out of 3148061
+ 16326 strings out of 493906
+ 303381 string characters out of 3148061
  374393 words of memory out of 3000000
- 19042 multiletter control sequences out of 15000+200000
- 21825 words of font info for 30 fonts, out of 3000000 for 9000
+ 19139 multiletter control sequences out of 15000+200000
+ 32166 words of font info for 49 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  49i,17n,64p,402b,688s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/Mi
-KTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/ur
-w/helvetic/uhvr8a.pfb>
-Output written on presentation.pdf (10 pages, 102785 bytes).
+KTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/hel
+vetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+
+Output written on presentation.pdf (22 pages, 630965 bytes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
- 191 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 840 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
 

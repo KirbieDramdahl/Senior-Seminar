@@ -1,19 +1,19 @@
 \beamer@endinputifotherversion {3.26pt}
 \select@language {english}
-\beamer@sectionintoc {2}{Edge Detection}{3}{0}{1}
-\beamer@sectionintoc {3}{Morphological Operations}{4}{0}{2}
-\beamer@subsectionintoc {3}{1}{Erosion}{5}{0}{2}
-\beamer@subsectionintoc {3}{2}{Dilation}{5}{0}{2}
-\beamer@subsectionintoc {3}{3}{Opening}{5}{0}{2}
-\beamer@subsectionintoc {3}{4}{Closing}{5}{0}{2}
-\beamer@sectionintoc {4}{Methods of Crack Detection}{5}{0}{3}
-\beamer@subsectionintoc {4}{1}{Top-Hat Transform}{6}{0}{3}
-\beamer@subsubsectionintoc {4}{1}{1}{White Top-Hat}{6}{0}{3}
-\beamer@subsubsectionintoc {4}{1}{2}{Black Top-Hat}{6}{0}{3}
-\beamer@subsubsectionintoc {4}{1}{3}{Multiscale Top-Hat}{6}{0}{3}
-\beamer@subsectionintoc {4}{2}{Alternative Method}{6}{0}{3}
-\beamer@sectionintoc {5}{Inpainting}{6}{0}{4}
-\beamer@sectionintoc {6}{Results}{7}{0}{5}
-\beamer@subsectionintoc {6}{1}{Top-Hat Transform Results}{8}{0}{5}
-\beamer@subsectionintoc {6}{2}{Alternative Method Results}{8}{0}{5}
-\beamer@sectionintoc {7}{Conclusions}{8}{0}{6}
+\beamer@sectionintoc {2}{Edge Detection}{4}{0}{1}
+\beamer@sectionintoc {3}{Morphological Operations}{7}{0}{2}
+\beamer@subsectionintoc {3}{1}{Erosion}{9}{0}{2}
+\beamer@subsectionintoc {3}{2}{Dilation}{10}{0}{2}
+\beamer@subsectionintoc {3}{3}{Opening}{11}{0}{2}
+\beamer@subsectionintoc {3}{4}{Closing}{12}{0}{2}
+\beamer@sectionintoc {4}{Methods of Crack Detection}{13}{0}{3}
+\beamer@subsectionintoc {4}{1}{Top-Hat Transform}{14}{0}{3}
+\beamer@subsubsectionintoc {4}{1}{1}{Black Top-Hat}{15}{0}{3}
+\beamer@subsubsectionintoc {4}{1}{2}{White Top-Hat}{16}{0}{3}
+\beamer@subsubsectionintoc {4}{1}{3}{Multiscale Top-Hat}{17}{0}{3}
+\beamer@subsectionintoc {4}{2}{Alternative Method}{17}{0}{3}
+\beamer@sectionintoc {5}{Inpainting}{17}{0}{4}
+\beamer@sectionintoc {6}{Results}{19}{0}{5}
+\beamer@subsectionintoc {6}{1}{Top-Hat Transform Results}{20}{0}{5}
+\beamer@subsectionintoc {6}{2}{Alternative Method Results}{20}{0}{5}
+\beamer@sectionintoc {7}{Conclusions}{20}{0}{6}
