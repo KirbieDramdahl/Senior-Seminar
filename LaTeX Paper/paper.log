@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.21)  25 MAR 2014 00:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.3)  9 APR 2014 22:12
 entering extended mode
 **paper.tex
 ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Paper\paper.tex"
@@ -6,13 +6,13 @@ LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
+lician, german, german-x-2012-05-30, german-x-2013-05-26, greek, gujarati, hind
+i, hungarian, icelandic, indonesian, interlingua, irish, italian, kannada, kurm
+anji, latin, latvian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, 
+monogreek, ngerman, ngerman-x-2012-05-30, ngerman-x-2013-05-26, nynorsk, oriya,
+ panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slo
+vak, slovenian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen,
+ ukenglish, ukrainian, uppersorbian, usenglishmax, welsh, loaded.
 ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Paper\sig-alternate.cls"
 ("C:\Program Files\MiKTeX\tex\latex\graphics\epsfig.sty"
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
@@ -236,6 +236,20 @@ LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count112
+\scratchdimen=\dimen132
+\scratchbox=\box30
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen133
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
+\everyMPtoPDFconversion=\toks38
+)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -292,59 +306,59 @@ Underfull \hbox (badness 5316) in paragraph at lines 37--37
 
 
 ]
-<structuring_element.pdf, id=12, 614.295pt x 794.97pt>
-File: structuring_element.pdf Graphic file (type pdf)
+<structuring_element_placement.pdf, id=12, 614.295pt x 794.97pt>
+File: structuring_element_placement.pdf Graphic file (type pdf)
 
-<use structuring_element.pdf>
-Package pdftex.def Info: structuring_element.pdf used on input line 75.
-(pdftex.def)             Requested size: 216.81pt x 114.77972pt.
- <erosion.pdf, id=14, 614.295pt x 794.97pt>
+<use structuring_element_placement.pdf>
+Package pdftex.def Info: structuring_element_placement.pdf used on input line 7
+5.
+(pdftex.def)             Requested size: 126.47249pt x 126.47108pt.
+
+<erosion.pdf, id=14, 614.295pt x 794.97pt>
 File: erosion.pdf Graphic file (type pdf)
-
-<use erosion.pdf>
+ <use erosion.pdf>
 Package pdftex.def Info: erosion.pdf used on input line 90.
 (pdftex.def)             Requested size: 216.81pt x 108.40308pt.
- <greyscale_erosion.pdf, id=16, 794.97pt x 614.295pt>
+
+<greyscale_erosion.pdf, id=16, 794.97pt x 614.295pt>
 File: greyscale_erosion.pdf Graphic file (type pdf)
 
 <use greyscale_erosion.pdf>
 Package pdftex.def Info: greyscale_erosion.pdf used on input line 98.
 (pdftex.def)             Requested size: 216.81pt x 88.69252pt.
- <dilation.pdf, id=18, 614.295pt x 794.97pt>
+ [2 <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/structuring_eleme
+nt_placement.pdf> <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/ero
+sion.pdf>]
+<dilation.pdf, id=46, 614.295pt x 794.97pt>
 File: dilation.pdf Graphic file (type pdf)
-
-<use dilation.pdf>
+ <use dilation.pdf>
 Package pdftex.def Info: dilation.pdf used on input line 113.
 (pdftex.def)             Requested size: 216.81pt x 108.40308pt.
- [2 <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/structuring_eleme
-nt.pdf> <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/erosion.pdf>]
- <greyscale_dilation.pdf, id=50, 794.97pt x 614.295pt>
+
+<greyscale_dilation.pdf, id=48, 794.97pt x 614.295pt>
 File: greyscale_dilation.pdf Graphic file (type pdf)
 
 <use greyscale_dilation.pdf>
 Package pdftex.def Info: greyscale_dilation.pdf used on input line 121.
 (pdftex.def)             Requested size: 216.81pt x 88.69252pt.
-
-Underfull \vbox (badness 4531) has occurred while \output is active []
-
-
-<opening.pdf, id=52, 794.97pt x 614.295pt>
+ <opening.pdf, id=50, 794.97pt x 614.295pt>
 File: opening.pdf Graphic file (type pdf)
- <use opening.pdf>
+
+<use opening.pdf>
 Package pdftex.def Info: opening.pdf used on input line 134.
 (pdftex.def)             Requested size: 216.81pt x 73.91043pt.
-
-<closing.pdf, id=54, 794.97pt x 614.295pt>
+ <closing.pdf, id=52, 794.97pt x 614.295pt>
 File: closing.pdf Graphic file (type pdf)
  <use closing.pdf>
 Package pdftex.def Info: closing.pdf used on input line 149.
 (pdftex.def)             Requested size: 216.81pt x 73.91043pt.
- [3 <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/greyscale_erosion
-.pdf> <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/dilation.pdf> <
-C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/greyscale_dilation.pdf
-> <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/opening.pdf>] [4 <C
-:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/closing.pdf>] [5]
-("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Paper\paper.bbl"
+
+[3 <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/greyscale_erosion.
+pdf> <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/dilation.pdf> <C
+:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/greyscale_dilation.pdf>
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/opening.pdf>]
+[4 <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Paper/closing.pdf>]
+[5] ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Paper\paper.bbl"
 Overfull \hbox (0.80937pt too wide) in paragraph at lines 55--59
 \T1/aer/m/it/9 http://homepages.inf.ed.ac.uk/rbf/HIPR2/morops.htm\T1/aer/m/n/9 
 .  
@@ -352,13 +366,13 @@ Overfull \hbox (0.80937pt too wide) in paragraph at lines 55--59
 
 ) [6] ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Paper\paper.aux") ) 
 Here is how much of TeX's memory you used:
- 2705 strings out of 493921
- 33549 string characters out of 3148871
- 111449 words of memory out of 3000000
- 5934 multiletter control sequences out of 15000+200000
+ 3000 strings out of 493906
+ 37505 string characters out of 3148061
+ 115291 words of memory out of 3000000
+ 6230 multiletter control sequences out of 15000+200000
  53178 words of font info for 70 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 41i,10n,28p,1552b,267s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,28p,1519b,267s stack positions out of 5000i,500n,10000p,200000b,50000s
 {
 C:/Program Files/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX/fonts/type1
@@ -370,9 +384,9 @@ KTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/u
 rw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pf
 b><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/M
 iKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (6 pages, 815780 bytes).
+Output written on paper.pdf (6 pages, 811765 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
+ 170 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

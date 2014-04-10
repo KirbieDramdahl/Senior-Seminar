@@ -16,7 +16,7 @@
 %%% REMEMBER TO CHANGE THE SEMESTER AND YEAR
 \conferenceinfo{UMM CSci Senior Seminar Conference, April 2014}{Morris, MN}
 
-\title{Morphological Operations Applied to Crack Detection in Digital Art Restoration}
+\title{Morphological Operations Applied to Digital Art Restoration}
 
 \numberofauthors{1}
 
@@ -50,7 +50,7 @@ The restoration of paintings and other works of art is an important aspect in pr
 
 While there are many forms of damage a piece of art may accumulate over time, one of the most common deteriorations is cracking. These cracks, or \textit{craquelure}, may form as a result of climate, drying, or mechanical factors~\cite{Altarpiece:2013, Statistics:2013, TopHat:2010}. This paper examines the detection and removal of cracks from pieces of digitized art. The main emphasis is on the detection phase, as carried out by mathematical morphology, which is a method of image processing based in set theory.
 
-This paper breaks the digital art restoration process into three steps: edge detection, crack detection, and crack removal. Section~\ref{edge detection} covers edge detection by examining an optimal edge detector known as the Canny edge detection algorithm. Section~\ref{morphological operations} provides an examination of the four basic morphological operators of erosion, dilation, opening, and closing. This information is necessary to understanding Section~\ref{crack detection}, which covers crack detection, and is the main focus of this paper. Section~\ref{inpainting} wraps up the digital art restoration process in covering the crack removal process (known as \textit{inpainting}). The remaining sections provide a summary. Section~\ref{results} reviews the results obtained by various methods of digital art restoration, again with a specific focus on the success of various morphological operators in the crack detection stage, and Section~\ref{conclusion} provides a summary of the information provided in this paper, as well as discusses possible further areas of interest and study.
+This paper breaks the digital art restoration process into three steps: edge detection, crack detection, and crack removal. Section~\ref{edge detection} covers edge detection by examining an optimal edge detector known as the Canny edge detection algorithm. Section~\ref{morphological operations} provides an examination of the four basic morphological operators of erosion, dilation, opening, and closing. This information is necessary for understanding Section~\ref{crack detection}, which covers crack detection, and is the main focus of this paper. Section~\ref{inpainting} wraps up the digital art restoration process in covering the crack removal process (known as \textit{inpainting}). The remaining sections provide a summary. Section~\ref{results} reviews the results obtained by various methods of digital art restoration, again with a specific focus on the success of various morphological operators in the crack detection stage, and Section~\ref{conclusion} provides a summary of the information provided in this paper, as well as discusses possible further areas of interest and study.
 
 \section{Edge Detection}\label{edge detection}
 Edges within a digitalized work of art are boundaries between areas of varying intensity. In other words, an edge occurs where there is ``a jump in intensity from one pixel to the next''~\cite{CannySummarized}. Intensity, in art, is defined as brightness or dullness of a color; the brighter the color, the higher its intensity. For example, in greyscale images, white has the highest intensity and black has the lowest intensity.
@@ -61,19 +61,19 @@ The Canny algorithm is based upon three criteria, which are as follows~\cite{Can
 \begin{enumerate}
 \item Accuracy - The edge detection algorithm should have a low error rate. This implies that there should be neither false positives (edges detected where they do not exist) nor false negatives (edges not detected where they do exist).
 \item Localization - The edge detection algorithm should minimize the distance between the edge detected and the actual edge.
-\item Uniqueness - The edge detection algorithm should have only one response to a single edge.
+\item Uniqueness - The edge detection algorithm should have only one response to a single edge. That is, one edge, or jump in intensity, should equal one response.
 \end{enumerate}
 
-In order to fulfill these criteria, the Canny algorithm first uses a Gaussian filter to smooth the image. The Gaussian filter functions in a manner somewhat similar to the structuring element used in mathematical morphology, discussed in Section~\ref{morphological operations}. Essentially, the filter passes over each pixel in turn, blending each into the surrounding pixels. The complete result is a slightly blurred version of the original image with no isolated, ``noisy'' pixels (pixels that exhibit a significant jump in intensity from all surrounding pixels).
+In order to fulfill these criteria, the Canny algorithm first uses a Gaussian filter to smooth the image. This is achieved by passing the filter over each pixel in turn, blending each into the surrounding pixels. The complete result is a slightly blurred version of the original image with no isolated, ``noisy'' pixels (pixels that exhibit a significant jump in intensity from all surrounding pixels).
 
 Having eliminated noise, the algorithm then takes the gradient of the image. An image gradient is a map of the directional changes in intensity within an image. The gradient is then used to locate regions where there are significant jumps in intensity. The regions identified here are then searched for local maximum. All non maximum pixels are set to zero. In the final step, the Canny algorithm further refines the detected edges by comparing the remaining pixels to two thresholds. If the intensity of a pixel falls below the low threshold, it is set to zero. If the intensity of a pixel falls above the high threshold, it is set to one (made an edge). If the intensity of a pixel falls between the two thresholds, it is set to one if at least one adjacent pixel has an intensity above the high threshold, and set to zero otherwise~\cite{CannySummarized}. The result of the Canny algorithm is a binary image depicting the edges of the initial input image.
 
 \section{Morphological Operations}\label{morphological operations}
-Following optional edge detection is crack detection, the focus of this paper. However, in order to understand this stage, it is first necessary to describe the basic principles of mathematical morphology. Typically, morphology is used in processing binary (black and white) images, although there are also variations used for greyscale images. This paper will examine both variations. Morphological functions take two inputs. The first input is the image to be processed. In binary morphology, the input image is divided into foreground (typically white) and background (typically black) regions. In greyscale morphology, the image is treated as a three-dimensional object, where higher areas are brighter (white) and lower areas are darker (black). The second input is a structuring element, a (typically small, in comparison to the image) set of coordinate points. An example of a 3x3 square structuring element with the origin located at the center in comparison to both a 20x30 binary image and a 32x11 greyscale image is presented in Figure~\ref{structuring element figure}. The structuring element is then used to modify the input image. The image that results from the morphological operation is determined by the shape, size, and point of origin of the structuring element~\cite{MorphologyWikiAnonymous, MorphologyBook:2000, MorphologyPaper:1987, MorphologyWiki}. Subsections~\ref{erosion}, \ref{dilation}, \ref{opening}, and \ref{closing} explain the fundamental operations of mathematical morphology.
+Following optional edge detection is crack detection, the focus of this paper. However, in order to understand this stage, it is first necessary to describe the basic principles of mathematical morphology. Typically, morphology is used in processing binary (black and white) images, although there are also variations used for greyscale images. This paper will examine both variations. Morphological functions take two inputs. The first input is the image to be processed. In binary morphology, the input image is divided into foreground (typically white) and background (typically black) regions. In greyscale morphology, the image is treated as a three-dimensional object, where higher areas are brighter (white) and lower areas are darker (black). The second input is a structuring element, a (typically small, in comparison to the image) set of coordinate points. An example of a 3x3 square structuring element with the origin located at the center in comparison to a 20x30 binary image is presented in Figure~\ref{structuring element figure}. The structuring element is then used to modify the input image. The image that results from the morphological operation is determined by the shape, size, and point of origin of the structuring element~\cite{MorphologyWikiAnonymous, MorphologyBook:2000, MorphologyPaper:1987, MorphologyWiki}. Subsections~\ref{erosion}, \ref{dilation}, \ref{opening}, and \ref{closing} explain the fundamental operations of mathematical morphology.
 \begin{figure}
 \centering
-\includegraphics[width=3in,trim={0 6.5in 0 0},clip]{structuring_element}
-\caption{Structuring Elements: Top: Structuring Element. Bottom Left: Structuring Element in Comparison to Binary Image. Bottom Right: Structuring Element in Comparison to Greyscale Image (Above) and Cross-Section (Below).}
+\includegraphics[width=1.75in,trim={0 6.5in 4in 0},clip]{structuring_element_placement}
+\caption{Structuring Element (Letter Marks Origin): A: Contained in Foreground Region. B: Intersecting Foreground and Background Regions, Origin in Foreground Region. C: Contained in Background Region. D: Intersecting Foreground and Background Regions, Origin in Background Region.}
 \label{structuring element figure}
 \end{figure}
 
@@ -92,7 +92,7 @@ In binary erosion, erosion is accomplished by placing the origin of the structur
 \label{binary erosion figure}
 \end{figure}
 
-Greyscale erosion follows the same basic pattern, but is somewhat more complex. Recall that in greyscale morphology, the image is viewed as a three-dimensional object, with ``hills'' corresponding to higher intensities and ``valleys'' indicating lower intensities. Here, the origin of the structuring element is placed in line with a pixel within the object. If every point within the structuring element is contained within the object, the pixel lined up with the origin is left unchanged. If at least one point within the structuring element is outside the object, the pixel lined up with the origin of the structuring element is removed. This process is repeated for every pixel within the object~\cite{MorphologyPaper:1987, MorphologyWiki}. An example of greyscale erosion performed on a cross-section of a 32x11 image using a 3x3 square structuring element with the origin located at the center is presented in Figure~\ref{greyscale erosion figure}.
+Greyscale erosion follows the same basic pattern, but is somewhat more complex. Recall that in greyscale morphology, the image is viewed as a three-dimensional object, with ``hills'' corresponding to higher intensities and ``valleys'' indicating lower intensities. Here, the origin of the structuring element is aligned with a pixel within the object. If every point within the structuring element is contained within the object, the pixel aligned with the origin is left unchanged. If at least one point within the structuring element is outside the object, the pixel aligned with the origin of the structuring element is removed. This process is repeated for every pixel within the object~\cite{MorphologyPaper:1987, MorphologyWiki}. An example of greyscale erosion performed on a cross-section of a 32x11 image using a 3x3 square structuring element with the origin located at the center is presented in Figure~\ref{greyscale erosion figure}.
 \begin{figure}
 \centering
 \includegraphics[width=3in,trim={0 4in 0 0},clip]{greyscale_erosion}
@@ -115,7 +115,7 @@ In binary dilation, this is accomplished by placing the origin of the structurin
 \label{binary dilation figure}
 \end{figure}
 
-Like greyscale erosion, greyscale dilation is a more complex variation on its binary counterpart. Once again, the origin of the structuring element is placed in line with a pixel within the three-dimensional object that represents the original image. If every point within the structuring element is contained within the object, the object is left unchanged. If at least one point within the structuring element is outside the object, the regions outside of the object lined up with points within the structuring element are set to be a part of the object. This process is repeated for every pixel within the object~\cite{MorphologyPaper:1987, MorphologyWiki}. An example of greyscale dilation performed on a cross-section of a 32x11 image using a 3x3 square structuring element with the origin located at the center is presented in Figure~\ref{greyscale dilation figure}.
+Like greyscale erosion, greyscale dilation is a more complex variation on its binary counterpart. Once again, the origin of the structuring element is aligned with a pixel within the three-dimensional object that represents the original image. If every point within the structuring element is contained within the object, the object is left unchanged. If at least one point within the structuring element is outside the object, the regions outside of the object aligned with points within the structuring element are set to be a part of the object. This process is repeated for every pixel within the object~\cite{MorphologyPaper:1987, MorphologyWiki}. An example of greyscale dilation performed on a cross-section of a 32x11 image using a 3x3 square structuring element with the origin located at the center is presented in Figure~\ref{greyscale dilation figure}.
 \begin{figure}
 \centering
 \includegraphics[width=3in,trim={0 4in 0 0},clip]{greyscale_dilation}
@@ -157,24 +157,24 @@ The greyscale closing of an image also consists of a dilation followed by an ero
 The next step in the crack detection and removal process (following optional edge detection) is crack detection. This section will discuss the application of various morphological filters to this problem.
 
 \subsection{Top-Hat Transform}
-The morphological filter most frequently used for detecting cracks within digitalized works of art is the top-hat transform. There are two variations on this filter, the black top-hat transform and white top-hat transform, which will be discussed in Subsubsections~\ref{black top-hat} and \ref{white top-hat} respectively.
+The morphological filter most frequently used for detecting cracks within digitalized works of art is the top-hat transform. There are two variations on this filter, the black top-hat transform and white top-hat transform, which will be discussed in Subsections~\ref{black top-hat} and \ref{white top-hat} respectively.
 
 \subsubsection{Black Top-Hat}\label{black top-hat}
-The black top-hat transform (also referred to as the closing top-hat transform) is used for detecting darker details on a lighter background within greyscale images~\cite{Altarpiece:2013, TopHat:2010}. This transform is defined as the difference between the closing of the original image by a specified structuring element and the original image itself, and is denoted by the equation
+The black top-hat transform (also referred to as the closing top-hat transform) is used for detecting darker details on a lighter background within greyscale images~\cite{Altarpiece:2013, TopHat:2010}. This transform is defined as the difference in pixel intensity between the closing of the original image by a specified structuring element and the original image itself, and is denoted by the equation
 \begin{equation*}
 BTH = (f \bullet s) - f
 \end{equation*}
 where \textit{f} is the original image and \textit{s} is the structuring element. This transformation produces a greyscale image with the desired details enhanced.
 
 \subsubsection{White Top-Hat}\label{white top-hat}
-The white top-hat transform (also referred to as the opening top-hat transform or, sometimes, the bottom-hat transform), is used for detecting lighter details on a darker background within greyscale images~\cite{Altarpiece:2013, TopHat:2010}. This transform is defined as the difference between the original image itself and the opening of the original image by a specified structuring element, and is denoted by the equation
+The white top-hat transform (also referred to as the opening top-hat transform or, sometimes, the bottom-hat transform), is used for detecting lighter details on a darker background within greyscale images~\cite{Altarpiece:2013, TopHat:2010}. This transform is defined as the difference in pixel intensity between the original image itself and the opening of the original image by a specified structuring element, and is denoted by the equation
 \begin{equation*}
 WTH = f - (f \circ s)
 \end{equation*}
 where \textit{f} is the original image and \textit{s} is the structuring element. Like its counterpart, this transformation produces a greyscale image with the desired details enhanced.
 
 \subsubsection{Multiscale Top-Hat}\label{multiscale top-hat}
-Subsubsections~\ref{black top-hat} and \ref{white top-hat} explain classical top-hat transforms. While these are popular and frequently used, they are not perfect. Paintings often contain details (such as fine brush strokes) which are misinterpreted as cracks by these filters. The multiscale morphological top-hat transform may be used to counteract this, as well as to detect cracks of varying sizes~\cite{Altarpiece:2013}. This transformation is executed by performing a series of classical top-hat transforms with structuring elements of various shapes and sizes (Cornelis et al use square structuring elements ``ranging from 3x3 to \textit{n}x\textit{n} pixels, where \textit{n} depends on the width of the crack to be detected''~\cite{Altarpiece:2013}). The resulting images, or crack maps, are then further processed to remove isolated groups of pixels and bridge pixel gaps.
+Subsections~\ref{black top-hat} and \ref{white top-hat} explain classical top-hat transforms. While these are popular and frequently used, they are not perfect. Paintings often contain details (such as fine brush strokes) which are misinterpreted as cracks by these filters. The multiscale morphological top-hat transform may be used to counteract this, as well as to detect cracks of varying sizes~\cite{Altarpiece:2013}. This transformation is executed by performing a series of classical top-hat transforms with structuring elements of various shapes and sizes (Cornelis et al use square structuring elements ``ranging from 3x3 to \textit{n}x\textit{n} pixels, where \textit{n} depends on the width of the crack to be detected''~\cite{Altarpiece:2013}). The resulting images, or crack maps, are then further processed to remove isolated groups of pixels and bridge pixel gaps.
 
 At this point, the crack maps are combined in order to build one final, comprehensive crack map. Cornelis et al accomplish this by first combining the crack maps derived from the three smallest structuring elements (the finer, thinner cracks) in what is referred to as the base map~\cite{Altarpiece:2013}. From here, the crack maps derived from the larger structuring elements (the coarser, heavier cracks) are layered onto the base map. This is done by only adding those coarser cracks which are connected to the finer cracks of the base map. The resulting final crack map both contains cracks of a variety of scales and reduces the occurrence of false positives~\cite{Altarpiece:2013}.
 
@@ -251,7 +251,7 @@ The statistics reported are summarized in Table~\ref{results table}. While the t
 & Edge Information Lost - 70\% & - & - & - & - & \textbf{0.530} & - & \textbf{0.704}\\ \hline
 \end{tabular}
 %}
-\caption{Crack Detection Results by Methodology: Data Specified in Text Emphasized, Modified from~\cite{Statistics:2013, Theran:2013}.}
+\caption{Crack Detection Results by Methodology: Data Specified in Text Emphasized, Modified from~\cite{Statistics:2013, Theran:2013}. \textit{tp} and \textit{fn} Total 500, Same for \textit{tn} and \textit{fp}.}
 \label{results table}
 \end{table*}
 
@@ -263,7 +263,7 @@ The focus of this paper was quite specifically on the effectiveness of applying 
 Finally, while it has been demonstrated that there are many and varied effective methods of crack detection and removal, cracks are only one form of defect that may be encountered in the digital art restoration process. Areas for further study include the detection and removal of dust, scratches, fading, and missing sections from digitalized works of art~\cite{TopHat:2010}.
 
 \section{Acknowledgments}
-Thanks to Peter Dolan for his input, help, and advice, and to Elena Machkasova for her recommendations.
+Thanks to Peter Dolan for his input, help, and advice, to Elena Machkasova for her corrections and improvements, and to Brian Goslinga for his recommendations.
 
 % The following two commands are all you need in the
 % initial runs of your .tex file to
