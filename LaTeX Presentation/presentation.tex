@@ -14,6 +14,7 @@
 % Or whatever. Note that the encoding and the font should match. If T1
 % does not look nice, try deleting the line with the fontenc.
 \usepackage{amsmath}
+\usepackage{graphicx}
 
 \newcommand{\linespace}{\vskip 0.25cm}
 
@@ -109,6 +110,17 @@ Digital art restoration provides:
 
 \begin{frame}
 \frametitle{Canny Algorithm}
+\begin{enumerate}
+\item Smooth image by applying Gaussian filter.
+\linebreak
+\item Take gradient of image.
+\linebreak
+\item Identify regions containing significant jumps in intensity.
+\linebreak
+\item Search regions for local maximum.
+\linebreak
+\item Compare remaining pixels to two thresholds.
+\end{enumerate}
 \end{frame}
 
 \section[Morphological Operations]{Morphological Operations}
@@ -127,7 +139,7 @@ Two Inputs:
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
-\includegraphics[width=1\textwidth]{structuring_element_placement}
+\includegraphics[width=1\textwidth,trim={0 6.5in 4in 0},clip]{structuring_element_placement}
 \end{column}
 \end{columns}
 \end{frame}
@@ -169,9 +181,7 @@ Two Inputs:
 Three Variations:
 \begin{itemize}
 \item Black Top-Hat
-\linebreak
 \item White Top-Hat
-\linebreak
 \item Multiscale Top-Hat
 \end{itemize}
 \end{frame}
