@@ -15,6 +15,7 @@
 % does not look nice, try deleting the line with the fontenc.
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{multirow}
 
 \newcommand{\linespace}{\vskip 0.25cm}
 
@@ -81,13 +82,23 @@
 \frametitle{Why?}
 Art restoration preserves objects of artistic, cultural, or historical value.
 \linebreak
-\linebreak
+However, this process demands many resources.
+\begin{columns}
+\begin{column}{0.5\textwidth}
 Digital art restoration provides:
 \begin{itemize}
 \item a comparatively inexpensive alternative.
 \item a nondestructive tool.
 \item an approximation of the initial appearance.
 \end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=1\textwidth,trim={0.5in 8.4in 5.5in 0.75in},clip]{ghent_altarpiece_original}
+\begin{center}
+\tiny Cornelis et al
+\end{center}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}
@@ -148,28 +159,48 @@ Two Inputs:
 
 \begin{frame}
 \frametitle{Erosion}
-\includegraphics[width=1\textwidth]{erosion}
+\begin{center}
+\begin{equation*}
+g = f \ominus s
+\end{equation*}
+\includegraphics[width=1\textwidth,trim={0 0 0 0.5in},clip]{erosion}
+\end{center}
 \end{frame}
 
 \subsection[Dilation]{Dilation}
 
 \begin{frame}
 \frametitle{Dilation}
-\includegraphics[width=1\textwidth]{dilation}
+\begin{center}
+\begin{equation*}
+g = f \oplus s
+\end{equation*}
+\includegraphics[width=1\textwidth,trim={0 0 0 0.5in},clip]{dilation}
+\end{center}
 \end{frame}
 
 \subsection[Opening]{Opening}
 
 \begin{frame}
 \frametitle{Opening}
-\includegraphics[width=1\textwidth]{opening}
+\begin{center}
+\begin{equation*}
+g = f \circ s = (f \ominus s) \oplus s
+\end{equation*}
+\includegraphics[width=1\textwidth,trim={0 0 0 0.5in},clip]{opening}
+\end{center}
 \end{frame}
 
 \subsection[Closing]{Closing}
 
 \begin{frame}
 \frametitle{Closing}
-\includegraphics[width=1\textwidth]{closing}
+\begin{center}
+\begin{equation*}
+g = f \bullet s = (f \oplus s) \ominus s
+\end{equation*}
+\includegraphics[width=1\textwidth,trim={0 0 0 0.5in},clip]{closing}
+\end{center}
 \end{frame}
 
 \section[Methods of Crack Detection]{Methods of Crack Detection}
@@ -178,37 +209,50 @@ Two Inputs:
 
 \begin{frame}
 \frametitle{Top-Hat Algorithm}
-Three Variations:
-\begin{itemize}
-\item Black Top-Hat
-\item White Top-Hat
-\item Multiscale Top-Hat
-\end{itemize}
+Three Variations: Black Top-Hat, White Top-Hat, Multiscale Top-Hat
+\linebreak
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{description}
+\item[Black Top-Hat] \hfill \\ darker details on lighter background
+\end{description}
+\begin{equation*}
+BTH = (f \bullet s) - f
+\end{equation*}
+\includegraphics[width=1\textwidth]{black_top_hat}
+\begin{center}
+\tiny Spagnolo and Somma
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{description}
+\item[White Top-Hat] \hfill \\ lighter details on darker background
+\end{description}
+\begin{equation*}
+WTH = f - (f \circ s)
+\end{equation*}
+\includegraphics[width=1\textwidth]{white_top_hat}
+\begin{center}
+\tiny Spagnolo and Somma
+\end{center}
+\end{column}
+\end{columns}
 \end{frame}
-
-\subsubsection[Black Top-Hat]{Black Top-Hat}
-
-\begin{frame}
-\frametitle{Black Top-Hat Transform}
-Darker Details on a Lighter Background
-\linebreak
-\linebreak
-$BTH = (f \bullet s) - f$
-\end{frame}
-
-\subsubsection[White Top-Hat]{White Top-Hat}
-
-\begin{frame}
-\frametitle{White Top-Hat Transform}
-Lighter Details on a Darker Background
-\linebreak
-\linebreak
-$WTH = f - (f \circ s)$
-\end{frame}
-
-\subsubsection[Multiscale Top-Hat]{Multiscale Top-Hat}
 
 \subsection[Alternative Method]{Alternative Method}
+
+\begin{frame}
+\frametitle{Alternative Method}
+\begin{enumerate}
+\item Set threshold; pixels exceeding threshold are determined to be cracks.
+\item Closing is applied to image, grouping isolated pixels.
+\item Previous two steps form binary crack mask.
+\item Canny edge detection algorithm implemented on original image to obtain edge mask.
+\item Dilation applied to edge mask.
+\item Crack and edge mask joined to form binary mask.
+\item Binary mask iteratively eroded until certain percentage of edge information is lost.
+\end{enumerate}
+\end{frame}
 
 \section[Inpainting]{Inpainting}
 
@@ -226,35 +270,120 @@ The image is broken down into regions, which are further broken down into neighb
 
 \section[Results]{Results}
 
-\subsection[Top-Hat Transform Results]{Top-Hat Transform Results}
+\begin{frame}
+\frametitle[Definitions]{Definitions}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+Categories:
+\begin{itemize}
+\item True Positives
+\item False Positives
+\item True Negatives
+\item False Negatives
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+Equations:
+\begin{itemize}
+\item False and True Positive Rate
+\begin{equation*}
+FP = fp / (fp + tn)
+\end{equation*}
+\begin{equation*}
+TP = tp / (tp + fn)
+\end{equation*}
+\item Precision and Recall
+\begin{equation*}
+P = tp / (tp + fp)
+\end{equation*}
+\begin{equation*}
+R = tp / (tp + fn)
+\end{equation*}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
 
-\subsection[Alternative Method Results]{Alternative Method Results}
+\begin{frame}
+\frametitle[Statistics]{Statistics}
+\begin{table}
+\centering
+\resizebox{10cm}{!}{
+\begin{tabular}{|l|l|r|r|r|r|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Classification} & \textbf{\textit{tp}} & \textbf{\textit{fn}} & \textbf{\textit{tn}} & \textbf{\textit{fp}} & \textbf{\textit{TP} (or \textit{R})} & \textbf{\textit{FP}} & \textbf{\textit{P}}\\ \hline
+\multirow{8}{*}{Top-Hat Transform}
+& Crack Thickness - Thin & 220 & 30 & 230 & 20 & 0.880 & 0.080 & 0.917\\ \cline{2-9}
+& Crack Thickness - Medium & 232 & 18 & 231 & 19 & 0.928 & 0.076 & 0.924\\ \cline{2-9}
+& Crack Thickness - Thick & 235 & 15 & 238 & 12 & 0.940 & 0.048 & 0.951\\ \cline{2-9}
+& Number of Cracks - Few & 242 & 8 & 245 & 5 & 0.968 & \textbf{0.020} & 0.980\\ \cline{2-9}
+& Number of Cracks - Medium & 245 & 5 & 241 & 9 & \textbf{0.980} & 0.036 & 0.965\\ \cline{2-9}
+& Number of Cracks - Many & 243 & 7 & 243 & 7 & 0.972 & 0.028 & 0.972\\ \cline{2-9}
+& Crack Connectivity - Low & 215 & 35 & 219 & 31 & \textbf{0.860} & \textbf{0.124} & 0.874\\ \cline{2-9}
+& Crack Connectivity - High & 218 & 32 & 221 & 29 & 0.872 & 0.116 & 0.883\\ \hline
+\multirow{3}{*}{Alternative Method}
+& Edge Information Lost - 1\% & - & - & - & - & \textbf{0.932} & - & \textbf{0.497}\\ \cline{2-9}
+& Edge Information Lost - 30\% & - & - & - & - & 0.857 & - & 0.594\\ \cline{2-9}
+& Edge Information Lost - 70\% & - & - & - & - & \textbf{0.530} & - & \textbf{0.704}\\ \hline
+\end{tabular}
+}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle[Results]{Results}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+Original Image
+\includegraphics[width=1\textwidth,trim={0.5in 8.4in 5.5in 0.75in},clip]{ghent_altarpiece_original}
+\begin{center}
+\tiny Cornelis et al
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+Restored Image
+\includegraphics[width=1\textwidth,trim={0.5in 8.4in 5.5in 0.75in},clip]{ghent_altarpiece_restored}
+\begin{center}
+\tiny Cornelis et al
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
 
 \section[Conclusions]{Conclusions}
 
 \begin{frame}
-	\frametitle{Thanks!}
-		
-	\linespace
-	\linespace
-	
-	%Contact: \texttt{dramd002@morris.umn.edu}
-	
-	\linespace
-	\linespace
-	
-	\begin{center}
-	{\huge Questions?}
-	\end{center}
+\frametitle[Conclusions]{Conclusions}
+The top-hat transform has been demonstrated to outperform the alternative examined here.
+\linebreak
+\linebreak
+\linebreak
+Further Work:
+\begin{itemize}
+\item implement other methods of crack detection
+\item examine effects of various forms of edge detection and inpainting
+\item study the detection and removal of other defects
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Thanks!}
+\linespace
+\linespace
+%Contact: \texttt{dramd002@morris.umn.edu}
+\linespace
+\linespace
+\begin{center}
+{\huge Questions?}
+\end{center}
 \end{frame}
 
 \section*{References}
 
 \begin{frame} 
-	\frametitle{References} 
-	
-	\begin{thebibliography}{lskdjf}
-	\end{thebibliography}
+\frametitle{References} 
+\bibliographystyle{abbrv}
+\bibliography{paper}
 \end{frame} 
 
 \end{document}

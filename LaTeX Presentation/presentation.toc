@@ -8,12 +8,7 @@
 \beamer@subsectionintoc {3}{4}{Closing}{12}{0}{2}
 \beamer@sectionintoc {4}{Methods of Crack Detection}{13}{0}{3}
 \beamer@subsectionintoc {4}{1}{Top-Hat Transform}{14}{0}{3}
-\beamer@subsubsectionintoc {4}{1}{1}{Black Top-Hat}{15}{0}{3}
-\beamer@subsubsectionintoc {4}{1}{2}{White Top-Hat}{16}{0}{3}
-\beamer@subsubsectionintoc {4}{1}{3}{Multiscale Top-Hat}{17}{0}{3}
-\beamer@subsectionintoc {4}{2}{Alternative Method}{17}{0}{3}
-\beamer@sectionintoc {5}{Inpainting}{17}{0}{4}
-\beamer@sectionintoc {6}{Results}{19}{0}{5}
-\beamer@subsectionintoc {6}{1}{Top-Hat Transform Results}{20}{0}{5}
-\beamer@subsectionintoc {6}{2}{Alternative Method Results}{20}{0}{5}
-\beamer@sectionintoc {7}{Conclusions}{20}{0}{6}
+\beamer@subsectionintoc {4}{2}{Alternative Method}{15}{0}{3}
+\beamer@sectionintoc {5}{Inpainting}{16}{0}{4}
+\beamer@sectionintoc {6}{Results}{18}{0}{5}
+\beamer@sectionintoc {7}{Conclusions}{22}{0}{6}
