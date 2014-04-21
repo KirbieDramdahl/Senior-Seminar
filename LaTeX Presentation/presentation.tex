@@ -110,11 +110,16 @@ Digital art restoration provides:
 
 \begin{frame}
 \frametitle{Criteria}
+Terms
+\begin{description}
+\item[Edge] boundaries between areas of varying intensity
+\item[Intensity] brightness or dullness of a color
+\end{description}
+\linespace
+\linespace
 \begin{enumerate}
 \item Accuracy - low error rate
-\linebreak
 \item Localization - minimal distance between detected and actual edge
-\linebreak
 \item Uniqueness - only one response to a single edge
 \end{enumerate}
 \end{frame}
@@ -160,6 +165,7 @@ Two Inputs:
 \begin{frame}
 \frametitle{Erosion}
 \begin{center}
+Erosion strips away pixels from the boundaries of foreground regions.
 \begin{equation*}
 g = f \ominus s
 \end{equation*}
@@ -172,6 +178,7 @@ g = f \ominus s
 \begin{frame}
 \frametitle{Dilation}
 \begin{center}
+Dilation adds pixels to the boundaries of foreground regions.
 \begin{equation*}
 g = f \oplus s
 \end{equation*}
@@ -184,6 +191,7 @@ g = f \oplus s
 \begin{frame}
 \frametitle{Opening}
 \begin{center}
+Opening strips away pixels from the boundaries of foreground regions while preserving foreground regions that fit the shape and size of the structuring element.
 \begin{equation*}
 g = f \circ s = (f \ominus s) \oplus s
 \end{equation*}
@@ -196,6 +204,7 @@ g = f \circ s = (f \ominus s) \oplus s
 \begin{frame}
 \frametitle{Closing}
 \begin{center}
+Closing adds pixels to the boundaries of foreground regions while preserving background regions that fit the shape and size of the structuring element.
 \begin{equation*}
 g = f \bullet s = (f \oplus s) \ominus s
 \end{equation*}
