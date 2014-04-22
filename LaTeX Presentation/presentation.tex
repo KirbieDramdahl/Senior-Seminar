@@ -87,8 +87,8 @@ However, this process demands many resources.
 \begin{column}{0.5\textwidth}
 Digital art restoration provides:
 \begin{itemize}
-\item a comparatively inexpensive alternative.
-\item a nondestructive tool.
+\item a comparatively inexpensive alternative,
+\item a nondestructive tool, and
 \item an approximation of the initial appearance.
 \end{itemize}
 \end{column}
@@ -118,9 +118,9 @@ Terms
 \linespace
 \linespace
 \begin{enumerate}
-\item Accuracy - low error rate
+\item Accuracy     - low error rate
 \item Localization - minimal distance between detected and actual edge
-\item Uniqueness - only one response to a single edge
+\item Uniqueness   - only one response to a single edge
 \end{enumerate}
 \end{frame}
 
@@ -150,8 +150,8 @@ Binary and Greyscale Images
 \linebreak
 Two Inputs:
 \begin{itemize}
-\item Original Image
-\item Structuring Element
+\item original image
+\item structuring element
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
@@ -165,7 +165,7 @@ Two Inputs:
 \begin{frame}
 \frametitle{Erosion}
 \begin{center}
-Erosion strips away pixels from the boundaries of foreground regions.
+Erosion removes foreground pixels.
 \begin{equation*}
 g = f \ominus s
 \end{equation*}
@@ -178,7 +178,7 @@ g = f \ominus s
 \begin{frame}
 \frametitle{Dilation}
 \begin{center}
-Dilation adds pixels to the boundaries of foreground regions.
+Dilation adds foreground pixels.
 \begin{equation*}
 g = f \oplus s
 \end{equation*}
@@ -191,7 +191,7 @@ g = f \oplus s
 \begin{frame}
 \frametitle{Opening}
 \begin{center}
-Opening strips away pixels from the boundaries of foreground regions while preserving foreground regions that fit the shape and size of the structuring element.
+Opening removes foreground pixels... neatly.
 \begin{equation*}
 g = f \circ s = (f \ominus s) \oplus s
 \end{equation*}
@@ -204,7 +204,7 @@ g = f \circ s = (f \ominus s) \oplus s
 \begin{frame}
 \frametitle{Closing}
 \begin{center}
-Closing adds pixels to the boundaries of foreground regions while preserving background regions that fit the shape and size of the structuring element.
+Closing adds foreground pixels... neatly.
 \begin{equation*}
 g = f \bullet s = (f \oplus s) \ominus s
 \end{equation*}
@@ -218,8 +218,6 @@ g = f \bullet s = (f \oplus s) \ominus s
 
 \begin{frame}
 \frametitle{Top-Hat Algorithm}
-Three Variations: Black Top-Hat, White Top-Hat, Multiscale Top-Hat
-\linebreak
 \begin{columns}
 \begin{column}{0.5\textwidth}
 \begin{description}
@@ -285,10 +283,10 @@ The image is broken down into regions, which are further broken down into neighb
 \begin{column}{0.5\textwidth}
 Categories:
 \begin{itemize}
-\item True Positives
-\item False Positives
-\item True Negatives
-\item False Negatives
+\item true positives (\textit{tp})
+\item false positives (\textit{fp})
+\item true negatives (\textit{tn})
+\item false negatives (\textit{fn})
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
@@ -372,9 +370,9 @@ The top-hat transform has been demonstrated to outperform the alternative examin
 \linebreak
 Further Work:
 \begin{itemize}
-\item implement other methods of crack detection
-\item examine effects of various forms of edge detection and inpainting
-\item study the detection and removal of other defects
+\item Implement other methods of crack detection.
+\item Examine effects of various forms of edge detection and inpainting.
+\item Study the detection and removal of other defects.
 \end{itemize}
 \end{frame}
 
@@ -394,6 +392,7 @@ Further Work:
 
 \begin{frame} 
 \frametitle{References} 
+\nocite{*}
 \bibliographystyle{abbrv}
 \bibliography{paper}
 \end{frame} 
