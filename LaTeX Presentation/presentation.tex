@@ -126,16 +126,16 @@ Terms
 
 \begin{frame}
 \frametitle{Canny Algorithm}
+{\Large Note: Break into multiple slides and add images.}
+\linebreak
 \begin{enumerate}
-\item Smooth image by applying Gaussian filter.
+\item Smooth image.
 \linebreak
-\item Take gradient of image.
-\linebreak
-\item Identify regions containing significant jumps in intensity.
+\item Find jumps in intensity.
 \linebreak
 \item Search regions for local maximum.
 \linebreak
-\item Compare remaining pixels to two thresholds.
+\item Compare intensity of remaining pixels to two thresholds.
 \end{enumerate}
 \end{frame}
 
@@ -164,6 +164,7 @@ Two Inputs:
 
 \begin{frame}
 \frametitle{Erosion}
+{\Large Note: Make transparency for structuring element.}
 \begin{center}
 Erosion removes foreground pixels.
 \begin{equation*}
@@ -190,6 +191,7 @@ g = f \oplus s
 
 \begin{frame}
 \frametitle{Opening}
+{\Large Note: Make transparency for structuring element.}
 \begin{center}
 Opening removes foreground pixels... neatly.
 \begin{equation*}
@@ -250,6 +252,7 @@ WTH = f - (f \circ s)
 
 \begin{frame}
 \frametitle{Alternative Method}
+{\Large Note: Break into multiple slides, add images, and possibly a diagram.}
 \begin{enumerate}
 \item Set threshold; pixels exceeding threshold are determined to be cracks.
 \item Closing is applied to image, grouping isolated pixels.
@@ -265,6 +268,7 @@ WTH = f - (f \circ s)
 
 \begin{frame}
 \frametitle{Inpainting Process}
+{\Large Note: Break into multiple slides and add images.}
 The image is broken down into regions, which are further broken down into neighborhoods. For each defective pixel $i$:
 \begin{enumerate}
 \item Find the context of $i$.
@@ -384,7 +388,7 @@ Further Work:
 \linespace
 \linespace
 \begin{center}
-\huge Questions?
+{\huge Questions?}
 \end{center}
 \end{frame}
 
@@ -394,7 +398,7 @@ Further Work:
 \frametitle{References} 
 \nocite{*}
 \bibliographystyle{abbrv}
-\tiny \bibliography{paper}
+{\tiny \bibliography{paper}}
 \end{frame}
 
 \end{document}
