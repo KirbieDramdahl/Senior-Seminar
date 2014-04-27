@@ -118,9 +118,9 @@ Terms
 \linespace
 \linespace
 \begin{enumerate}
-\item Accuracy \ \ \ \ \ - low error rate
-\item Localization \ - minimal distance between detected and actual edge
-\item Uniqueness \ - only one response to a single edge
+\item[1] Accuracy \ \ \ \ \ - low error rate
+\item[2] Localization \ - minimal distance between detected and actual edge
+\item[3] Uniqueness \ - only one response to a single edge
 \end{enumerate}
 \end{frame}
 
@@ -180,8 +180,8 @@ Binary and Greyscale Images
 \linebreak
 Two Inputs:
 \begin{itemize}
-\item original image
-\item structuring element
+\item Original Image
+\item Structuring Element
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
@@ -194,7 +194,6 @@ Two Inputs:
 
 \begin{frame}
 \frametitle{Erosion}
-{\Large Note: Make transparency for structuring element.}
 \begin{center}
 Erosion removes foreground pixels.
 \begin{equation*}
@@ -221,7 +220,6 @@ g = f \oplus s
 
 \begin{frame}
 \frametitle{Opening}
-{\Large Note: Make transparency for structuring element.}
 \begin{center}
 Opening removes foreground pixels... neatly.
 \begin{equation*}
@@ -375,12 +373,14 @@ OR
 \end{column}
 \end{columns}
 \begin{columns}
-\begin{column}{0.5\textwidth}
+\begin{column}{0.45\textwidth}
 \begin{center}
 \includegraphics[width=1\textwidth,trim={0 6.5in 4in 1in},clip]{replace_defect_1}
 \end{center}
 \end{column}
-\begin{column}{0.5\textwidth}
+\begin{column}{0.1\textwidth}
+\end{column}
+\begin{column}{0.45\textwidth}
 \begin{center}
 \includegraphics[width=1\textwidth,trim={0 6.5in 4in 1in},clip]{replace_defect_2}
 \end{center}

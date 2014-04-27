@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.3)  27 APR 2014 03:28
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.3)  27 APR 2014 14:23
 entering extended mode
 **presentation.tex
 
@@ -997,10 +997,10 @@ lement_placement.pdf>]
 <erosion.pdf, id=381, 614.295pt x 794.97pt>
 File: erosion.pdf Graphic file (type pdf)
  <use erosion.pdf>
-Package pdftex.def Info: erosion.pdf used on input line 205.
+Package pdftex.def Info: erosion.pdf used on input line 204.
 (pdftex.def)             Requested size: 342.2953pt x 422.83736pt.
 
-Overfull \vbox (267.29517pt too high) detected at line 205
+Overfull \vbox (257.69516pt too high) detected at line 204
  []
 
 [10
@@ -1009,10 +1009,10 @@ Overfull \vbox (267.29517pt too high) detected at line 205
  <dilation.pdf, id=425, 614.295pt x 794.97pt>
 File: dilation.pdf Graphic file (type pdf)
  <use dilation.pdf>
-Package pdftex.def Info: dilation.pdf used on input line 218.
+Package pdftex.def Info: dilation.pdf used on input line 217.
 (pdftex.def)             Requested size: 342.2953pt x 422.83736pt.
 
-Overfull \vbox (257.69516pt too high) detected at line 218
+Overfull \vbox (257.69516pt too high) detected at line 217
  []
 
 [11
@@ -1021,10 +1021,10 @@ Overfull \vbox (257.69516pt too high) detected at line 218
 ] <opening.pdf, id=466, 794.97pt x 614.295pt>
 File: opening.pdf Graphic file (type pdf)
  <use opening.pdf>
-Package pdftex.def Info: opening.pdf used on input line 232.
+Package pdftex.def Info: opening.pdf used on input line 230.
 (pdftex.def)             Requested size: 342.2953pt x 248.94801pt.
 
-Overfull \vbox (93.70697pt too high) detected at line 232
+Overfull \vbox (84.10696pt too high) detected at line 230
  []
 
 [12
@@ -1033,10 +1033,10 @@ Overfull \vbox (93.70697pt too high) detected at line 232
  <closing.pdf, id=509, 794.97pt x 614.295pt>
 File: closing.pdf Graphic file (type pdf)
  <use closing.pdf>
-Package pdftex.def Info: closing.pdf used on input line 245.
+Package pdftex.def Info: closing.pdf used on input line 243.
 (pdftex.def)             Requested size: 342.2953pt x 248.94801pt.
 
-Overfull \vbox (84.10696pt too high) detected at line 245
+Overfull \vbox (84.10696pt too high) detected at line 243
  []
 
 [13
@@ -1050,13 +1050,13 @@ toc") [14
 File: black_top_hat.png Graphic file (type png)
 
 <use black_top_hat.png>
-Package pdftex.def Info: black_top_hat.png used on input line 279.
+Package pdftex.def Info: black_top_hat.png used on input line 277.
 (pdftex.def)             Requested size: 171.14764pt x 84.84154pt.
  <white_top_hat.png, id=591, 256.70906pt x 127.22531pt>
 File: white_top_hat.png Graphic file (type png)
 
 <use white_top_hat.png>
-Package pdftex.def Info: white_top_hat.png used on input line 279.
+Package pdftex.def Info: white_top_hat.png used on input line 277.
 (pdftex.def)             Requested size: 171.14764pt x 84.82118pt.
  [15
 
@@ -1068,7 +1068,7 @@ File: alternative_method_diagram_1.pdf Graphic file (type pdf)
 
 <use alternative_method_diagram_1.pdf>
 Package pdftex.def Info: alternative_method_diagram_1.pdf used on input line 29
-6.
+4.
 (pdftex.def)             Requested size: 171.14764pt x 119.80276pt.
  [16
 
@@ -1078,8 +1078,8 @@ ethod_diagram_1.pdf>]
 File: alternative_method_diagram_2.pdf Graphic file (type pdf)
 
 <use alternative_method_diagram_2.pdf>
-Package pdftex.def Info: alternative_method_diagram_2.pdf used on input line 31
-1.
+Package pdftex.def Info: alternative_method_diagram_2.pdf used on input line 30
+9.
 (pdftex.def)             Requested size: 171.14764pt x 119.80276pt.
  [17
 
@@ -1090,7 +1090,7 @@ File: alternative_method_diagram_3.pdf Graphic file (type pdf)
 
 <use alternative_method_diagram_3.pdf>
 Package pdftex.def Info: alternative_method_diagram_3.pdf used on input line 32
-6.
+4.
 (pdftex.def)             Requested size: 171.14764pt x 118.48662pt.
  [18
 
@@ -1103,7 +1103,7 @@ toc") [19
 File: regions_and_neighborhoods.pdf Graphic file (type pdf)
 
 <use regions_and_neighborhoods.pdf>
-Package pdftex.def Info: regions_and_neighborhoods.pdf used on input line 340.
+Package pdftex.def Info: regions_and_neighborhoods.pdf used on input line 338.
 (pdftex.def)             Requested size: 171.14764pt x 171.15231pt.
  [20
 
@@ -1113,7 +1113,7 @@ eighborhoods.pdf>]
 File: context_and_match.pdf Graphic file (type pdf)
 
 <use context_and_match.pdf>
-Package pdftex.def Info: context_and_match.pdf used on input line 356.
+Package pdftex.def Info: context_and_match.pdf used on input line 354.
 (pdftex.def)             Requested size: 171.14764pt x 171.15231pt.
  [21
 
@@ -1124,19 +1124,15 @@ File: replace_defect_1.pdf Graphic file (type pdf)
 
 <use replace_defect_1.pdf>
 Package pdftex.def Info: replace_defect_1.pdf used on input line 389.
-(pdftex.def)             Requested size: 171.14764pt x 133.11847pt.
+(pdftex.def)             Requested size: 154.03183pt x 119.80276pt.
 
 <replace_defect_2.pdf, id=845, 614.295pt x 794.97pt>
 File: replace_defect_2.pdf Graphic file (type pdf)
 
 <use replace_defect_2.pdf>
 Package pdftex.def Info: replace_defect_2.pdf used on input line 389.
-(pdftex.def)             Requested size: 171.14764pt x 133.11847pt.
-
-Overfull \vbox (0.77629pt too high) detected at line 389
- []
-
-[22
+(pdftex.def)             Requested size: 154.03183pt x 119.80276pt.
+ [22
 
  <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/replace_defec
 t_1.pdf> <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/repla
@@ -1220,10 +1216,10 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 525.
  ) 
 Here is how much of TeX's memory you used:
- 16568 strings out of 493906
- 309518 string characters out of 3148061
- 387593 words of memory out of 3000000
- 19320 multiletter control sequences out of 15000+200000
+ 16564 strings out of 493906
+ 309405 string characters out of 3148061
+ 387594 words of memory out of 3000000
+ 19316 multiletter control sequences out of 15000+200000
  50907 words of font info for 70 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  49i,17n,64p,402b,698s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1235,7 +1231,7 @@ sy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Progr
 am Files/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTeX/f
 onts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/hel
 vetic/uhvro8a.pfb>
-Output written on presentation.pdf (32 pages, 2049600 bytes).
+Output written on presentation.pdf (32 pages, 2049481 bytes).
 PDF statistics:
  1269 PDF objects out of 1440 (max. 8388607)
  90 named destinations out of 1000 (max. 500000)
