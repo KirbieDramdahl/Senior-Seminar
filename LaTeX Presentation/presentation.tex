@@ -95,7 +95,7 @@ Digital art restoration provides:
 \begin{column}{0.5\textwidth}
 \includegraphics[width=1\textwidth,trim={0.5in 8.4in 5.5in 0.75in},clip]{ghent_altarpiece_original}
 \begin{center}
-\tiny Cornelis et al
+{\tiny Cornelis et al}
 \end{center}
 \end{column}
 \end{columns}
@@ -125,18 +125,48 @@ Terms
 \end{frame}
 
 \begin{frame}
-\frametitle{Canny Algorithm}
-{\Large Note: Break into multiple slides and add images.}
-\linebreak
+\frametitle{Canny Algorithm I}
+\begin{columns}
+\begin{column}{0.6\textwidth}
 \begin{enumerate}
-\item Smooth image.
-\linebreak
-\item Find jumps in intensity.
-\linebreak
-\item Search regions for local maximum.
-\linebreak
-\item Compare intensity of remaining pixels to two thresholds.
+\item[1] Smooth image.
+\item[2] Find jumps in intensity.
+\item[3] Search regions for local maximum.
 \end{enumerate}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{center}
+\includegraphics[width=0.65\textwidth]{gaussian_blur_example}
+\linebreak
+{\tiny Wikipedia}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Canny Algorithm II}
+\begin{enumerate}
+\item[4] Compare intensity of remaining pixels to thresholds.
+\end{enumerate}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+Original Image
+\begin{center}
+\includegraphics[width=1\textwidth]{before_edge_detection}
+\linebreak
+{\tiny Canny}
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+Edge Mask
+\begin{center}
+\includegraphics[width=1\textwidth]{after_edge_detection}
+\linebreak
+{\tiny Canny}
+\end{center}
+\end{column}
+\end{columns}
 \end{frame}
 
 \section[Morphological Operations]{Morphological Operations}
@@ -230,7 +260,7 @@ BTH = (f \bullet s) - f
 \end{equation*}
 \includegraphics[width=1\textwidth]{black_top_hat}
 \begin{center}
-\tiny Spagnolo and Somma
+{\tiny Spagnolo and Somma}
 \end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
@@ -242,7 +272,7 @@ WTH = f - (f \circ s)
 \end{equation*}
 \includegraphics[width=1\textwidth]{white_top_hat}
 \begin{center}
-\tiny Spagnolo and Somma
+{\tiny Spagnolo and Somma}
 \end{center}
 \end{column}
 \end{columns}
@@ -251,72 +281,159 @@ WTH = f - (f \circ s)
 \subsection[Alternative Method]{Alternative Method}
 
 \begin{frame}
-\frametitle{Alternative Method}
-{\Large Note: Break into multiple slides, add images, and possibly a diagram.}
+\frametitle{Alternative Method I}
+\begin{columns}
+\begin{column}{0.5\textwidth}
 \begin{enumerate}
-\item Set threshold; pixels exceeding threshold are determined to be cracks.
-\item Closing is applied to image, grouping isolated pixels.
-\item Previous two steps form binary crack mask.
-\item Canny edge detection algorithm implemented on original image to obtain edge mask.
-\item Dilation applied to edge mask.
-\item Crack and edge mask joined to form binary mask.
-\item Binary mask iteratively eroded until certain percentage of edge information is lost.
+\item[1] Compare pixels to threshold.
+\item[2] Apply closing.
 \end{enumerate}
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=1\textwidth,trim={1in 7.5in 2.5in 0in},clip]{alternative_method_diagram_1}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Alternative Method II}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{enumerate}
+\item[3] Apply edge detection.
+\item[4] Apply dilation.
+\end{enumerate}
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=1\textwidth,trim={2.5in 7.5in 1in 0in},clip]{alternative_method_diagram_2}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Alternative Method III}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{enumerate}
+\item[5] Join to form binary mask.
+\item[6] Apply erosion.
+\end{enumerate}
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=1\textwidth,trim={1in 6.5in 1in 0in},clip]{alternative_method_diagram_3}
+\end{column}
+\end{columns}
 \end{frame}
 
 \section[Inpainting]{Inpainting}
 
 \begin{frame}
-\frametitle{Inpainting Process}
-{\Large Note: Break into multiple slides and add images.}
-The image is broken down into regions, which are further broken down into neighborhoods. For each defective pixel $i$:
+\frametitle{Inpainting Process I}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+The image is broken down.
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=1\textwidth,trim={0 6.5in 4in 0},clip]{regions_and_neighborhoods}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Inpainting Process II}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+For each defective pixel $i$:
 \begin{enumerate}
-\item Find the context of $i$.
-\item Examine all other neighborhoods within the region of $i$.
-\item Find neighborhood most similar to context of $i$ by sum of squared differences.
-\item If the sum of squared errors is below a set threshold, replace all defective pixels in the neighborhood of $i$ with corresponding pixels from most similar neighborhood.
-\item Otherwise, replace pixel $i$ with the median value of all non-defective pixels within its neighborhood.
+\item[1] Find the context of $i$.
+\item[2] Find most similar neighborhood in region.
 \end{enumerate}
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=1\textwidth,trim={0 6.5in 4in 0},clip]{context_and_match}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Inpainting Process III}
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\begin{enumerate}
+\item[3] Replace all defective pixels in the neighborhood of $i$ with corresponding pixels from most similar neighborhood.
+\end{enumerate}
+
+\end{column}
+\begin{column}{0.1\textwidth}
+OR
+\end{column}
+\begin{column}{0.45\textwidth}
+\begin{enumerate}
+\item[3] Replace pixel $i$ with the median value of all non-defective pixels within its neighborhood.
+\end{enumerate}
+
+\end{column}
+\end{columns}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{center}
+\includegraphics[width=1\textwidth,trim={0 6.5in 4in 1in},clip]{replace_defect_1}
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{center}
+\includegraphics[width=1\textwidth,trim={0 6.5in 4in 1in},clip]{replace_defect_2}
+\end{center}
+\end{column}
+\end{columns}
 \end{frame}
 
 \section[Results]{Results}
 
 \begin{frame}
 \frametitle[Definitions]{Definitions}
-\begin{columns}
-\begin{column}{0.5\textwidth}
+\begin{center}
 Categories:
+\end{center}
+{\footnotesize
 \begin{itemize}
 \item true positives (\textit{tp})
 \item false positives (\textit{fp})
 \item true negatives (\textit{tn})
 \item false negatives (\textit{fn})
 \end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth}
+}
+\begin{center}
 Equations:
-\begin{itemize}
-\item False and True Positive Rate
+\end{center}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+{\footnotesize
+False and True Positive Rate
 \begin{equation*}
 FP = fp / (fp + tn)
 \end{equation*}
 \begin{equation*}
 TP = tp / (tp + fn)
 \end{equation*}
-\item Precision and Recall
+}
+\end{column}
+\begin{column}{0.5\textwidth}
+{\footnotesize
+Precision and Recall
 \begin{equation*}
 P = tp / (tp + fp)
 \end{equation*}
 \begin{equation*}
 R = tp / (tp + fn)
 \end{equation*}
-\end{itemize}
+}
 \end{column}
 \end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle[Statistics]{Statistics}
+\frametitle[Statistics]{Statistics I}
 \begin{table}
 \centering
 \resizebox{10cm}{!}{
@@ -339,8 +456,12 @@ R = tp / (tp + fn)
 \end{tabular}
 }
 \end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Statistics II}
 \begin{center}
-\huge ADD GRAPH HERE!!!
+\includegraphics[width=0.8\textwidth,trim={1in 5in 1in 1in},clip]{results_graph}
 \end{center}
 \end{frame}
 
@@ -351,14 +472,14 @@ R = tp / (tp + fn)
 Original Image
 \includegraphics[width=1\textwidth,trim={0.5in 8.4in 5.5in 0.75in},clip]{ghent_altarpiece_original}
 \begin{center}
-\tiny Cornelis et al
+{\tiny Cornelis et al}
 \end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
 Restored Image
 \includegraphics[width=1\textwidth,trim={0.5in 8.4in 5.5in 0.75in},clip]{ghent_altarpiece_restored}
 \begin{center}
-\tiny Cornelis et al
+{\tiny Cornelis et al}
 \end{center}
 \end{column}
 \end{columns}

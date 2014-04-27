@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.3)  21 APR 2014 22:55
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.3)  27 APR 2014 03:28
 entering extended mode
 **presentation.tex
 
@@ -948,182 +948,296 @@ toc") [4
 
 ] [5
 
-] [6
+] <gaussian_blur_example.jpg, id=243, 376.40625pt x 752.8125pt>
+File: gaussian_blur_example.jpg Graphic file (type jpg)
 
-]
+<use gaussian_blur_example.jpg>
+Package pdftex.def Info: gaussian_blur_example.jpg used on input line 145.
+(pdftex.def)             Requested size: 88.99458pt x 177.99074pt.
+ [6
+
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/gaussian_blur
+_example.jpg>]
+<before_edge_detection.png, id=270, 205.5178pt x 170.13562pt>
+File: before_edge_detection.png Graphic file (type png)
+
+<use before_edge_detection.png>
+Package pdftex.def Info: before_edge_detection.png used on input line 170.
+(pdftex.def)             Requested size: 171.14764pt x 141.6824pt.
+
+<after_edge_detection.png, id=272, 198.7425pt x 167.12437pt>
+File: after_edge_detection.png Graphic file (type png)
+
+<use after_edge_detection.png>
+Package pdftex.def Info: after_edge_detection.png used on input line 170.
+(pdftex.def)             Requested size: 171.14764pt x 143.92305pt.
+ [7
+
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/before_edge_d
+etection.png> <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/
+after_edge_detection.png>]
 ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
 toc")
-Overfull \vbox (11.52086pt too high) detected at line 142
+Overfull \vbox (11.52086pt too high) detected at line 172
  []
 
-[7
+[8
 
-] <structuring_element_placement.pdf, id=310, 614.295pt x 794.97pt>
+] <structuring_element_placement.pdf, id=343, 614.295pt x 794.97pt>
 File: structuring_element_placement.pdf Graphic file (type pdf)
 
 <use structuring_element_placement.pdf>
 Package pdftex.def Info: structuring_element_placement.pdf used on input line 1
-61.
+91.
 (pdftex.def)             Requested size: 171.14764pt x 171.15231pt.
- [8
+ [9
 
  <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/structuring_e
 lement_placement.pdf>]
-<erosion.pdf, id=348, 614.295pt x 794.97pt>
+<erosion.pdf, id=381, 614.295pt x 794.97pt>
 File: erosion.pdf Graphic file (type pdf)
  <use erosion.pdf>
-Package pdftex.def Info: erosion.pdf used on input line 175.
+Package pdftex.def Info: erosion.pdf used on input line 205.
 (pdftex.def)             Requested size: 342.2953pt x 422.83736pt.
 
-Overfull \vbox (267.29517pt too high) detected at line 175
- []
-
-[9
-
- <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/erosion.pdf>]
- <dilation.pdf, id=392, 614.295pt x 794.97pt>
-File: dilation.pdf Graphic file (type pdf)
- <use dilation.pdf>
-Package pdftex.def Info: dilation.pdf used on input line 188.
-(pdftex.def)             Requested size: 342.2953pt x 422.83736pt.
-
-Overfull \vbox (257.69516pt too high) detected at line 188
+Overfull \vbox (267.29517pt too high) detected at line 205
  []
 
 [10
 
- <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/dilation.pdf>
-] <opening.pdf, id=433, 794.97pt x 614.295pt>
-File: opening.pdf Graphic file (type pdf)
- <use opening.pdf>
-Package pdftex.def Info: opening.pdf used on input line 202.
-(pdftex.def)             Requested size: 342.2953pt x 248.94801pt.
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/erosion.pdf>]
+ <dilation.pdf, id=425, 614.295pt x 794.97pt>
+File: dilation.pdf Graphic file (type pdf)
+ <use dilation.pdf>
+Package pdftex.def Info: dilation.pdf used on input line 218.
+(pdftex.def)             Requested size: 342.2953pt x 422.83736pt.
 
-Overfull \vbox (93.70697pt too high) detected at line 202
+Overfull \vbox (257.69516pt too high) detected at line 218
  []
 
 [11
 
- <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/opening.pdf>]
- <closing.pdf, id=476, 794.97pt x 614.295pt>
-File: closing.pdf Graphic file (type pdf)
- <use closing.pdf>
-Package pdftex.def Info: closing.pdf used on input line 215.
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/dilation.pdf>
+] <opening.pdf, id=466, 794.97pt x 614.295pt>
+File: opening.pdf Graphic file (type pdf)
+ <use opening.pdf>
+Package pdftex.def Info: opening.pdf used on input line 232.
 (pdftex.def)             Requested size: 342.2953pt x 248.94801pt.
 
-Overfull \vbox (84.10696pt too high) detected at line 215
+Overfull \vbox (93.70697pt too high) detected at line 232
  []
 
 [12
 
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/opening.pdf>]
+ <closing.pdf, id=509, 794.97pt x 614.295pt>
+File: closing.pdf Graphic file (type pdf)
+ <use closing.pdf>
+Package pdftex.def Info: closing.pdf used on input line 245.
+(pdftex.def)             Requested size: 342.2953pt x 248.94801pt.
+
+Overfull \vbox (84.10696pt too high) detected at line 245
+ []
+
+[13
+
  <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/closing.pdf>]
 
 ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
-toc") [13
+toc") [14
 
-] <black_top_hat.png, id=556, 262.73157pt x 130.23656pt>
+] <black_top_hat.png, id=590, 262.73157pt x 130.23656pt>
 File: black_top_hat.png Graphic file (type png)
 
 <use black_top_hat.png>
-Package pdftex.def Info: black_top_hat.png used on input line 249.
+Package pdftex.def Info: black_top_hat.png used on input line 279.
 (pdftex.def)             Requested size: 171.14764pt x 84.84154pt.
- <white_top_hat.png, id=558, 256.70906pt x 127.22531pt>
+ <white_top_hat.png, id=591, 256.70906pt x 127.22531pt>
 File: white_top_hat.png Graphic file (type png)
 
 <use white_top_hat.png>
-Package pdftex.def Info: white_top_hat.png used on input line 249.
+Package pdftex.def Info: white_top_hat.png used on input line 279.
 (pdftex.def)             Requested size: 171.14764pt x 84.82118pt.
- [14
+ [15
 
  <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/black_top_hat
 .png> <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/white_to
-p_hat.png>] [15
+p_hat.png>]
+<alternative_method_diagram_1.pdf, id=621, 614.295pt x 794.97pt>
+File: alternative_method_diagram_1.pdf Graphic file (type pdf)
+
+<use alternative_method_diagram_1.pdf>
+Package pdftex.def Info: alternative_method_diagram_1.pdf used on input line 29
+6.
+(pdftex.def)             Requested size: 171.14764pt x 119.80276pt.
+ [16
+
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/alternative_m
+ethod_diagram_1.pdf>]
+<alternative_method_diagram_2.pdf, id=658, 614.295pt x 794.97pt>
+File: alternative_method_diagram_2.pdf Graphic file (type pdf)
+
+<use alternative_method_diagram_2.pdf>
+Package pdftex.def Info: alternative_method_diagram_2.pdf used on input line 31
+1.
+(pdftex.def)             Requested size: 171.14764pt x 119.80276pt.
+ [17
+
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/alternative_m
+ethod_diagram_2.pdf>]
+<alternative_method_diagram_3.pdf, id=694, 614.295pt x 794.97pt>
+File: alternative_method_diagram_3.pdf Graphic file (type pdf)
+
+<use alternative_method_diagram_3.pdf>
+Package pdftex.def Info: alternative_method_diagram_3.pdf used on input line 32
+6.
+(pdftex.def)             Requested size: 171.14764pt x 118.48662pt.
+ [18
+
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/alternative_m
+ethod_diagram_3.pdf>]
+("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
+toc") [19
+
+] <regions_and_neighborhoods.pdf, id=766, 614.295pt x 794.97pt>
+File: regions_and_neighborhoods.pdf Graphic file (type pdf)
+
+<use regions_and_neighborhoods.pdf>
+Package pdftex.def Info: regions_and_neighborhoods.pdf used on input line 340.
+(pdftex.def)             Requested size: 171.14764pt x 171.15231pt.
+ [20
+
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/regions_and_n
+eighborhoods.pdf>]
+<context_and_match.pdf, id=805, 614.295pt x 794.97pt>
+File: context_and_match.pdf Graphic file (type pdf)
+
+<use context_and_match.pdf>
+Package pdftex.def Info: context_and_match.pdf used on input line 356.
+(pdftex.def)             Requested size: 171.14764pt x 171.15231pt.
+ [21
+
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/context_and_m
+atch.pdf>]
+<replace_defect_1.pdf, id=843, 614.295pt x 794.97pt>
+File: replace_defect_1.pdf Graphic file (type pdf)
+
+<use replace_defect_1.pdf>
+Package pdftex.def Info: replace_defect_1.pdf used on input line 389.
+(pdftex.def)             Requested size: 171.14764pt x 133.11847pt.
+
+<replace_defect_2.pdf, id=845, 614.295pt x 794.97pt>
+File: replace_defect_2.pdf Graphic file (type pdf)
+
+<use replace_defect_2.pdf>
+Package pdftex.def Info: replace_defect_2.pdf used on input line 389.
+(pdftex.def)             Requested size: 171.14764pt x 133.11847pt.
+
+Overfull \vbox (0.77629pt too high) detected at line 389
+ []
+
+[22
+
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/replace_defec
+t_1.pdf> <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/repla
+ce_defect_2.pdf>]
+("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
+toc") [23
 
 ]
-("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
-toc") [16
-
-] [17
-
-]
-("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
-toc") [18
-
-] [19
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 433.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 433.
+ [24
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 345.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 459.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 345.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 459.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 345.
- [20
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 459.
+ [25
 
-]
+] <results_graph.pdf, id=986, 614.295pt x 794.97pt>
+File: results_graph.pdf Graphic file (type pdf)
+
+<use results_graph.pdf>
+Package pdftex.def Info: results_graph.pdf used on input line 466.
+(pdftex.def)             Requested size: 273.83728pt x 210.6418pt.
+
+Overfull \vbox (5.86325pt too high) detected at line 466
+ []
+
+[26
+
+ <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/results_graph
+.pdf>]
 File: ghent_altarpiece_original.pdf Graphic file (type pdf)
  <use ghent_altarpiece_original.pdf>
-Package pdftex.def Info: ghent_altarpiece_original.pdf used on input line 365.
+Package pdftex.def Info: ghent_altarpiece_original.pdf used on input line 486.
 (pdftex.def)             Requested size: 171.14764pt x 126.6511pt.
 
-<ghent_altarpiece_restored.pdf, id=766, 614.295pt x 794.97pt>
+<ghent_altarpiece_restored.pdf, id=1026, 614.295pt x 794.97pt>
 File: ghent_altarpiece_restored.pdf Graphic file (type pdf)
 
 <use ghent_altarpiece_restored.pdf>
-Package pdftex.def Info: ghent_altarpiece_restored.pdf used on input line 365.
+Package pdftex.def Info: ghent_altarpiece_restored.pdf used on input line 486.
 (pdftex.def)             Requested size: 171.14764pt x 126.6511pt.
- [21
+ [27
 
  <C:/Users/MKDramdahl/Documents/Senior Seminar/LaTeX Presentation/ghent_altarpi
 ece_restored.pdf>]
 ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
-toc") [22
+toc") [28
 
-] [23
+] [29
 
-] [24
+] [30
 
 ]
 ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
-bbl") [25
+bbl") [31
 
  <C:/Program Files/MiKTeX 2.9/tex/latex/beamer/base/art/beamericonarticle.pdf>]
- [26
+ [32
 
 
 ]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 404.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 404.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 525.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 525.
 
 ("C:\Users\MKDramdahl\Documents\Senior Seminar\LaTeX Presentation\presentation.
 aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 404.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 404.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 525.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 525.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 4E322CC65099BE323087C88902E8A3A0;680.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 404.
+(rerunfilecheck)             Checksum: CF793C20278693A08866D89209B524DB;681.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 525.
  ) 
 Here is how much of TeX's memory you used:
- 16464 strings out of 493906
- 307453 string characters out of 3148061
- 388594 words of memory out of 3000000
- 19248 multiletter control sequences out of 15000+200000
- 38969 words of font info for 54 fonts, out of 3000000 for 9000
+ 16568 strings out of 493906
+ 309518 string characters out of 3148061
+ 387593 words of memory out of 3000000
+ 19320 multiletter control sequences out of 15000+200000
+ 50907 words of font info for 70 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  49i,17n,64p,402b,698s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a
-.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program 
-Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts
-/type1/urw/helvetic/uhvro8a.pfb>
-Output written on presentation.pdf (26 pages, 1101081 bytes).
+KTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Progr
+am Files/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files/MiKTeX/f
+onts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/hel
+vetic/uhvro8a.pfb>
+Output written on presentation.pdf (32 pages, 2049600 bytes).
 PDF statistics:
- 1004 PDF objects out of 1200 (max. 8388607)
- 78 named destinations out of 1000 (max. 500000)
- 268 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1269 PDF objects out of 1440 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
+ 371 words of extra memory for PDF output out of 10000 (max. 10000000)
 
