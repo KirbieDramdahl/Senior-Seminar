@@ -395,6 +395,8 @@ OR
 \begin{center}
 Categories:
 \end{center}
+\begin{columns}
+\begin{column}{0.5\textwidth}
 {\footnotesize
 \begin{itemize}
 \item true positives (\textit{tp})
@@ -403,13 +405,36 @@ Categories:
 \item false negatives (\textit{fn})
 \end{itemize}
 }
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{table}
+\resizebox{5.5cm}{!}{
+\centering
+\begin{tabular}{cc|c|c|}
+\cline{3-4}
+& & \multicolumn{2}{|c|}{Actual Value}\\
+\cline{3-4}
+& & True & False \\
+\hline
+\multicolumn{1}{|c|}{\multirow{2}{*}{Predicted Value}}& 
+  \multicolumn{1}{|c|}{True} & True Positive & False Positive \\
+\cline{2-4}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{|c|}{False} & False Negative & True Negative \\
+\hline
+\end{tabular}
+}
+\end{table}
+\end{column}
+\end{columns}
 \begin{center}
 Equations:
 \end{center}
 \begin{columns}
 \begin{column}{0.5\textwidth}
 {\footnotesize
+\begin{center}
 False and True Positive Rate
+\end{center}
 \begin{equation*}
 FP = fp / (fp + tn)
 \end{equation*}
@@ -420,7 +445,9 @@ TP = tp / (tp + fn)
 \end{column}
 \begin{column}{0.5\textwidth}
 {\footnotesize
+\begin{center}
 Precision and Recall
+\end{center}
 \begin{equation*}
 P = tp / (tp + fp)
 \end{equation*}
